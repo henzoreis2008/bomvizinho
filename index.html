@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bom Vizinho | Materiais de construção em Planaltina - GO</title>
+<meta name="description" content="Materiais de construção, máquinas e peças em Planaltina - GO. Compre com segurança pelo Mercado Livre ou fale com a gente no WhatsApp.">
+<meta name="theme-color" content="#1A5968">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bom Vizinho | Materiais de construção">
+<meta property="og:description" content="Tudo para sua obra, pertinho de você. Duas unidades em Planaltina - GO.">
+<!-- PREENCHER: troque pelo endereço real do site para a logo aparecer no WhatsApp -->
+<meta property="og:image" content="https://SEU-DOMINIO.com.br/logo.png">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://http2.mlstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --turquesa:#539DAA; --turquesa-escuro:#357F8D; --petroleo:#1A5968; --menta:#7BC4B3;
+    --branco:#FDFFFC; --grafite:#24282B; --cinza:#EEF5F4;
+    --vidro:rgba(253,255,252,.12); --vidro-borda:rgba(253,255,252,.28);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:80px}
+  body{font-family:'Poppins',sans-serif;background:var(--branco);color:var(--grafite);line-height:1.6;overflow-x:hidden}
+  a{text-decoration:none;color:inherit}
+  .container{width:min(1150px,92%);margin:auto;position:relative;z-index:2}
+
+  /* ===== ANIMAÇÕES ===== */
+  @keyframes subir{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:none}}
+  @keyframes surgir{from{opacity:0;transform:scale(.7) rotate(-8deg)}to{opacity:1;transform:none}}
+  @keyframes flutuar{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+  @keyframes bolha{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(30px,-25px) scale(1.12)}}
+  @keyframes pulso{0%{box-shadow:0 0 0 0 rgba(37,211,102,.6)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+  @keyframes brilho{from{left:-60%}to{left:130%}}
+
+  .reveal{opacity:0;transform:translateY(45px);transition:opacity .8s ease,transform .8s ease}
+  .reveal.esq{transform:translateX(-50px)}
+  .reveal.dir{transform:translateX(50px)}
+  .reveal.zoom{transform:scale(.88)}
+  .reveal.visivel{opacity:1;transform:none}
+
+  /* ===== VIDRO ===== */
+  .vidro{background:var(--vidro);border:1px solid var(--vidro-borda);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+
+  /* ===== BOLHAS ===== */
+  .bolhas{position:absolute;inset:0;overflow:hidden;z-index:1;pointer-events:none}
+  .bolhas span{position:absolute;border-radius:50%;background:var(--menta);opacity:.3;filter:blur(2px);animation:bolha 12s ease-in-out infinite}
+  .bolhas span:nth-child(1){width:320px;height:320px;top:-80px;right:-60px}
+  .bolhas span:nth-child(2){width:180px;height:180px;bottom:-40px;left:8%;animation-delay:-4s;background:var(--branco);opacity:.12}
+  .bolhas span:nth-child(3){width:120px;height:120px;top:40%;left:45%;animation-delay:-8s;background:var(--petroleo);opacity:.3}
+
+  /* ===== CABEÇALHO ===== */
+  header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(26,89,104,.45);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--vidro-borda);transition:background .4s;animation:subir .8s ease both}
+  header.rolou{background:rgba(26,89,104,.95)}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0;gap:16px}
+  .marca{display:flex;align-items:center;gap:10px;color:var(--branco);font-weight:800;font-size:1.3rem}
+  .marca img{width:50px;height:50px;border-radius:50%;object-fit:cover;border:2px solid var(--menta);transition:transform .5s}
+  .marca:hover img{transform:rotate(-10deg) scale(1.08)}
+  .menu{display:flex;gap:24px;color:var(--branco);font-weight:500}
+  .menu a{position:relative}
+  .menu a::after{content:"";position:absolute;left:0;bottom:-4px;width:0;height:2px;background:var(--menta);transition:width .3s}
+  .menu a:hover::after{width:100%}
+
+  /* ===== BOTÕES ===== */
+  .btn{display:inline-block;padding:12px 22px;border-radius:30px;font-weight:600;transition:transform .25s,background .25s,color .25s;cursor:pointer;border:none;font-family:inherit;font-size:.95rem;text-align:center;position:relative;overflow:hidden}
+  .btn:hover{transform:translateY(-3px)}
+  .btn::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:rgba(255,255,255,.35);transform:skewX(-20deg);opacity:0}
+  .btn:hover::after{opacity:1;animation:brilho .7s ease}
+  .btn-menta{background:var(--menta);color:var(--petroleo)}
+  .btn-menta:hover{background:var(--branco)}
+  .btn-contorno{border:2px solid var(--branco);color:var(--branco);background:rgba(255,255,255,.08)}
+  .btn-contorno:hover{background:var(--branco);color:var(--petroleo)}
+  .btn-ml{background:#FFE600;color:#2D3277}
+  .btn-petroleo{background:var(--petroleo);color:var(--branco)}
+  .btn-petroleo:hover{background:var(--turquesa-escuro)}
+  a:focus-visible,button:focus-visible{outline:3px solid var(--menta);outline-offset:3px}
+
+  /* ===== HERO ===== */
+  .hero{background:linear-gradient(135deg,var(--turquesa-escuro) 0%,var(--petroleo) 100%);color:var(--branco);padding:140px 0 100px;position:relative;overflow:hidden}
+  .hero-grid{display:grid;grid-template-columns:1.3fr 1fr;align-items:center;gap:40px}
+  .hero-texto{padding:36px;border-radius:24px}
+  .hero-texto > *{animation:subir .9s ease both}
+  .hero-texto > *:nth-child(2){animation-delay:.2s}
+  .hero-texto > *:nth-child(3){animation-delay:.4s}
+  .hero h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;font-weight:800}
+  .hero h1 span{color:var(--menta)}
+  .hero p{font-size:1.1rem;margin:18px 0 28px;max-width:520px}
+  .hero-botoes{display:flex;gap:12px;flex-wrap:wrap}
+  .hero-logo{display:flex;justify-content:center;animation:surgir 1.1s .3s ease both}
+  .hero-logo img{width:min(340px,80%);border-radius:50%;border:6px solid var(--branco);animation:flutuar 5s ease-in-out infinite}
+
+  /* ===== BENEFÍCIOS ===== */
+  .beneficios{background:var(--petroleo);color:var(--branco);position:relative;overflow:hidden}
+  .beneficios .container{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;padding:30px 0}
+  .beneficio{display:flex;gap:12px;align-items:center;padding:16px 18px;border-radius:16px;transition:transform .3s,background .3s}
+  .beneficio:hover{transform:translateY(-5px);background:rgba(253,255,252,.2)}
+  .beneficio b{display:block;color:var(--menta)}
+  .icone{font-size:1.8rem}
+
+  /* ===== SEÇÕES ===== */
+  section{padding:80px 0;position:relative;overflow:hidden}
+  .titulo{text-align:center;margin-bottom:38px}
+  .titulo h2{font-size:2rem;color:var(--petroleo);font-weight:800}
+  .titulo p{color:#4f5b5e}
+  .escura .titulo h2{color:var(--branco)}
+  .escura .titulo p{color:var(--cinza)}
+
+  /* ===== CATÁLOGO ===== */
+  .filtros{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:32px}
+  .filtro{padding:8px 18px;border-radius:30px;border:2px solid var(--petroleo);background:none;color:var(--petroleo);font-family:inherit;font-weight:500;cursor:pointer;transition:.3s}
+  .filtro.ativo,.filtro:hover{background:var(--petroleo);color:var(--branco)}
+  .grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:22px}
+  .card{background:#fff;border-radius:18px;overflow:hidden;border:1px solid #dbe9e7;display:flex;flex-direction:column;transition:opacity .6s ease,transform .6s ease,border-color .3s,box-shadow .3s}
+  .card.visivel:hover{transform:translateY(-8px);border-color:var(--turquesa);box-shadow:0 14px 30px rgba(26,89,104,.18)}
+  .card-img{aspect-ratio:1;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden;font-size:4rem;padding:14px}
+  .card-img img{width:100%;height:100%;object-fit:contain;transition:transform .5s}
+  .card:hover .card-img img{transform:scale(1.08)}
+  .card-img.sem-img::after{content:"📦"}
+  .card-corpo{padding:14px 16px 18px;display:flex;flex-direction:column;gap:8px;flex:1;border-top:1px solid #eef3f2}
+  .card h3{font-size:1rem;font-weight:500;line-height:1.35;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .ver-ml{margin-top:auto;font-size:.85rem;font-weight:600;color:var(--petroleo)}
+  .card:hover .ver-ml{text-decoration:underline}
+  .ver-todos{text-align:center;margin-top:40px}
+
+  /* ===== MERCADO LIVRE ===== */
+  .lojas-ml{background:var(--turquesa-escuro)}
+  .lojas-grid,.unidades-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+  .loja{border-radius:20px;padding:32px;text-align:center;color:var(--branco);transition:transform .35s,background .35s}
+  .loja:hover{transform:translateY(-8px);background:rgba(253,255,252,.22)}
+  .loja h3{font-size:1.3rem;margin-bottom:6px}
+  .loja p{margin-bottom:20px}
+
+  /* ===== UNIDADES ===== */
+  .unidades{background:var(--petroleo)}
+  .unidade{color:var(--branco);border-radius:20px;padding:30px;transition:transform .35s,background .35s}
+  .unidade:hover{transform:translateY(-8px);background:rgba(253,255,252,.2)}
+  .unidade h3{color:var(--menta);font-size:1.3rem;margin-bottom:10px}
+  .unidade p{margin-bottom:6px}
+  .horario{margin-top:12px;padding-top:12px;border-top:1px solid var(--vidro-borda)}
+  .unidade .btn{margin-top:14px}
+
+  /* ===== RODAPÉ ===== */
+  footer{background:var(--grafite);color:#cfd8d7;padding:40px 0 90px;font-size:.9rem}
+  .rodape{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px}
+  footer h4{color:var(--menta);margin-bottom:8px}
+  footer a:hover{color:var(--menta)}
+  .copy{text-align:center;margin-top:30px;padding-top:20px;border-top:1px solid #3a4044;font-size:.8rem}
+
+  /* ===== WHATSAPP FLUTUANTE ===== */
+  .wpp-flutuante{position:fixed;right:20px;bottom:20px;background:#25D366;color:#fff;padding:14px 20px;border-radius:40px;font-weight:600;z-index:99;animation:surgir .8s 1s ease both,pulso 2s 2s infinite;transition:transform .3s;box-shadow:0 6px 18px rgba(0,0,0,.2)}
+  .wpp-flutuante:hover{transform:scale(1.08)}
+
+  @media(max-width:800px){
+    .menu{display:none}
+    .hero{padding:110px 0 70px}
+    .hero-grid{grid-template-columns:1fr;text-align:center}
+    .hero-texto{padding:24px}
+    .hero p{margin-inline:auto}
+    .hero-botoes{justify-content:center}
+    .hero-logo{order:-1}
+    .hero-logo img{width:170px}
+    .bolhas span{animation:none}
+    section{padding:60px 0}
+    .titulo h2{font-size:1.7rem}
+  }
+  @media(max-width:500px){
+    .marca{font-size:1.1rem}
+    .marca img{width:42px;height:42px}
+    .nav .btn{padding:10px 16px;font-size:.85rem}
+    .grade{grid-template-columns:repeat(2,1fr);gap:12px}
+    .card-img{padding:8px}
+    .card-corpo{padding:10px 12px 14px}
+    .card h3{font-size:.88rem}
+    .ver-ml{font-size:.78rem}
+    .wpp-flutuante{right:14px;bottom:14px;padding:14px 16px}
+    .wpp-texto{display:none}
+  }
+  @media(prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation:none!important;transition:none!important}
+    .reveal,.reveal.esq,.reveal.dir,.reveal.zoom{opacity:1;transform:none}
+  }
+</style>
+</head>
+<body>
+
+<header id="topo">
+  <div class="container nav">
+    <a href="#" class="marca">
+      <img src="logo.png" alt="Logo Bom Vizinho" onerror="this.style.display='none'">
+      Bom Vizinho
+    </a>
+    <nav class="menu">
+      <a href="#catalogo">Catálogo</a>
+      <a href="#mercado-livre">Mercado Livre</a>
+      <a href="#unidades">Unidades</a>
+    </nav>
+    <a id="wpp-topo" class="btn btn-menta" target="_blank" rel="noopener"
+       href="https://wa.me/5561995944857?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Bom%20Vizinho.">Fale conosco</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="bolhas"><span></span><span></span><span></span></div>
+  <div class="container hero-grid">
+    <div class="hero-texto vidro">
+      <h1>Tudo para sua obra, <span>pertinho de você.</span></h1>
+      <p>Materiais de construção, máquinas e peças em Planaltina - GO, com compra segura pelo Mercado Livre e atendimento direto no WhatsApp.</p>
+      <div class="hero-botoes">
+        <a href="#catalogo" class="btn btn-menta">Ver catálogo</a>
+        <a href="#mercado-livre" class="btn btn-contorno">Comprar no Mercado Livre</a>
+      </div>
+    </div>
+    <div class="hero-logo">
+      <img src="logo.png" alt="Bom Vizinho" onerror="this.parentElement.style.display='none'">
+    </div>
+  </div>
+</section>
+
+<div class="beneficios">
+  <div class="container">
+    <div class="beneficio vidro reveal"><span class="icone">🛡️</span><div><b>Compra segura</b>Pague pelo Mercado Livre</div></div>
+    <div class="beneficio vidro reveal" style="transition-delay:.15s"><span class="icone">💬</span><div><b>Atendimento rápido</b>Tire dúvidas no WhatsApp</div></div>
+    <div class="beneficio vidro reveal" style="transition-delay:.3s"><span class="icone">📍</span><div><b>Duas unidades</b>Santa Rita e Setor Sul</div></div>
+  </div>
+</div>
+
+<section id="catalogo">
+  <div class="container">
+    <div class="titulo reveal">
+      <h2>Nosso catálogo</h2>
+      <p>Toque no produto para ver e comprar no Mercado Livre</p>
+    </div>
+    <div class="filtros reveal" id="filtros"></div>
+    <div class="grade" id="grade"></div>
+    <div class="ver-todos reveal">
+      <a href="#mercado-livre" class="btn btn-petroleo">Ver todos os produtos</a>
+    </div>
+  </div>
+</section>
+
+<section id="mercado-livre" class="lojas-ml escura">
+  <div class="bolhas"><span></span><span></span><span></span></div>
+  <div class="container">
+    <div class="titulo reveal">
+      <h2>Nossas lojas no Mercado Livre</h2>
+      <p>Veja todos os produtos e compre com a segurança do Mercado Livre</p>
+    </div>
+    <div class="lojas-grid">
+      <div class="loja vidro reveal esq">
+        <h3>Loja Bom Vizinho 1</h3>
+        <p>Confira todos os anúncios desta loja</p>
+        <a class="btn btn-ml" target="_blank" rel="noopener" href="https://lista.mercadolivre.com.br/_CustId_1686836728">Ver produtos</a>
+      </div>
+      <div class="loja vidro reveal dir">
+        <h3>Loja Bom Vizinho 2</h3>
+        <p>Confira todos os anúncios desta loja</p>
+        <a class="btn btn-ml" target="_blank" rel="noopener" href="https://lista.mercadolivre.com.br/_CustId_73439697">Ver produtos</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="unidades" class="unidades escura">
+  <div class="bolhas"><span></span><span></span><span></span></div>
+  <div class="container">
+    <div class="titulo reveal">
+      <h2>Nossas unidades</h2>
+      <p>Estamos em Planaltina - GO</p>
+    </div>
+    <div class="unidades-grid">
+      <div class="unidade vidro reveal zoom">
+        <h3>Unidade Santa Rita</h3>
+        <p>Quadra 23, Lote 12-A, Bairro Santa Rita</p>
+        <p>Planaltina - GO, CEP 73752-433</p>
+        <!-- PREENCHER: horário real -->
+        <p class="horario">🕒 Seg a sex: 00h às 00h<br>Sábado: 00h às 00h</p>
+        <a class="btn btn-menta" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Quadra+23+Lote+12-A+Santa+Rita+Planaltina+GO+73752-433">Ver no mapa</a>
+      </div>
+      <div class="unidade vidro reveal zoom" style="transition-delay:.2s">
+        <h3>Unidade Setor Sul</h3>
+        <!-- PREENCHER: confirmar endereço completo (lote) -->
+        <p>Quadra QA 1 MC, Setor Sul</p>
+        <p>Planaltina - GO, CEP 73753-101</p>
+        <!-- PREENCHER: horário real -->
+        <p class="horario">🕒 Seg a sex: 00h às 00h<br>Sábado: 00h às 00h</p>
+        <a class="btn btn-menta" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Quadra+QA+1+MC+Setor+Sul+Planaltina+GO+73753-101">Ver no mapa</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="rodape reveal">
+      <div>
+        <h4>Bom Vizinho E-Commerce Ltda</h4>
+        <p>Comércio varejista de materiais de construção</p>
+        <p>CNPJ 54.046.082/0001-34 (Santa Rita)</p>
+        <p>CNPJ 54.046.082/0002-15 (Setor Sul)</p>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <p><a target="_blank" rel="noopener" href="https://wa.me/5561995944857">WhatsApp: (61) 99594-4857</a></p>
+      </div>
+      <div>
+        <h4>Navegue</h4>
+        <p><a href="#catalogo">Catálogo</a></p>
+        <p><a href="#mercado-livre">Lojas no Mercado Livre</a></p>
+        <p><a href="#unidades">Unidades</a></p>
+      </div>
+    </div>
+    <p class="copy">© <span id="ano"></span> Bom Vizinho. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<a id="wpp-flutuante" class="wpp-flutuante" target="_blank" rel="noopener" aria-label="Fale no WhatsApp"
+   href="https://wa.me/5561995944857?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Bom%20Vizinho.">💬<span class="wpp-texto"> WhatsApp</span></a>
+
+<script>
+  const LOJA_ML = "https://lista.mercadolivre.com.br/_CustId_1686836728";
+
+  /* ===== PRODUTOS: nome, categoria, imagem (link da foto), link (anúncio no Mercado Livre) ===== */
+  const PRODUTOS = [
+    {
+      nome: "Corrente para Motosserra Stihl MS-170 22 Dentes 3/8 1.1mm",
+      categoria: "Peças",
+      imagem: "https://http2.mlstatic.com/D_NQ_NP_620651-MLA100086246587_122025-O.jpg",
+      link: "https://www.mercadolivre.com.br/corrente-para-motosserra-stihl-ms-170-22-dentes-38-11mm/p/MLB31010502?pdp_filters=seller_id%3A1686836728"
+    },
+    {
+      nome: "Furadeira à Gasolina para Mourão 25,4cc VF500 Vulcan",
+      categoria: "Máquinas",
+      imagem: "https://http2.mlstatic.com/D_NQ_NP_967086-MLA99904070781_112025-O.jpg",
+      link: "https://www.mercadolivre.com.br/furadeira-gasolina-para-mourao-254cc-vf500-vulcan/p/MLB24993224?pdp_filters=seller_id%3A1686836728"
+    },
+    {
+      nome: "Carburador Roçadeira VR430P VR430H VR520H VR620H VR430S",
+      categoria: "Peças",
+      imagem: "https://http2.mlstatic.com/D_NQ_NP_845202-MLB87142810047_072025-O.jpg",
+      link: "https://www.mercadolivre.com.br/carburador-rocadeira-vr430p-vr430h-vr520h-vr620h-vr430s/p/MLB2036641873?pdp_filters=seller_id%3A1686836728"
+    }
+  ];
+
+  document.getElementById("ano").textContent = new Date().getFullYear();
+
+  const topo = document.getElementById("topo");
+  window.addEventListener("scroll", () => topo.classList.toggle("rolou", window.scrollY > 40), { passive:true });
+
+  const observador = new IntersectionObserver(entradas => {
+    entradas.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add("visivel");
+        e.target.addEventListener("transitionend", () => e.target.style.transitionDelay = "0s", { once:true });
+        observador.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll(".reveal").forEach(el => observador.observe(el));
+
+  const grade = document.getElementById("grade");
+  const filtros = document.getElementById("filtros");
+  const categorias = ["Todos", ...new Set(PRODUTOS.map(p => p.categoria).filter(Boolean))];
+
+  function mostrar(cat){
+    const lista = cat === "Todos" ? PRODUTOS : PRODUTOS.filter(p => p.categoria === cat);
+    grade.innerHTML = lista.map((p, i) => `
+      <a class="card reveal" href="${p.link || LOJA_ML}" target="_blank" rel="noopener" style="transition-delay:${(i % 4) * 0.1}s">
+        <div class="card-img${p.imagem ? "" : " sem-img"}">
+          ${p.imagem ? `<img src="${p.imagem}" alt="${p.nome}" loading="lazy" onerror="this.parentElement.classList.add('sem-img');this.remove()">` : ""}
+        </div>
+        <div class="card-corpo">
+          <h3>${p.nome}</h3>
+          <span class="ver-ml">Ver no Mercado Livre →</span>
+        </div>
+      </a>`).join("");
+    grade.querySelectorAll(".reveal").forEach(el => observador.observe(el));
+  }
+
+  if (categorias.length > 2) {
+    filtros.innerHTML = categorias.map((c, i) =>
+      `<button class="filtro ${i === 0 ? "ativo" : ""}" data-cat="${c}">${c}</button>`).join("");
+    filtros.addEventListener("click", e => {
+      if (!e.target.dataset.cat) return;
+      document.querySelectorAll(".filtro").forEach(b => b.classList.remove("ativo"));
+      e.target.classList.add("ativo");
+      mostrar(e.target.dataset.cat);
+    });
+  } else {
+    filtros.style.display = "none";
+  }
+  mostrar("Todos");
+</script>
+</body>
+</html>
