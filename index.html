@@ -1,397 +1,1397 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bom Vizinho | Materiais de construção em Planaltina - GO</title>
-<meta name="description" content="Materiais de construção, máquinas e peças em Planaltina - GO. Compre com segurança pelo Mercado Livre ou fale com a gente no WhatsApp.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bom Vizinho | Materiais de construção, máquinas e peças em Planaltina - GO</title>
+<meta name="description" content="Materiais de construção, máquinas e peças em Planaltina - GO, com a linha Branco de motores, geradores e motobombas. Compre pelo Mercado Livre ou fale com a gente no WhatsApp.">
 <meta name="theme-color" content="#1A5968">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Bom Vizinho | Materiais de construção">
-<meta property="og:description" content="Tudo para sua obra, pertinho de você. Duas unidades em Planaltina - GO.">
-<!-- PREENCHER: troque pelo endereço real do site para a logo aparecer no WhatsApp -->
-<meta property="og:image" content="https://SEU-DOMINIO.com.br/logo.png">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Bom Vizinho | Materiais de construção, máquinas e peças">
+<meta property="og:description" content="Tudo para sua obra, pertinho de você. Duas unidades em Planaltina - GO, linha Branco e compra segura pelo Mercado Livre.">
+<!-- Ao publicar, troque pelo endereço completo da logo, ex.: https://bomvizinho.netlify.app/IMG_5499.jpeg -->
+<meta property="og:image" content="IMG_5499.jpeg">
 <link rel="icon" href="IMG_5499.jpeg">
+<link rel="apple-touch-icon" href="IMG_5499.jpeg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://http2.mlstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --turquesa:#539DAA; --turquesa-escuro:#357F8D; --petroleo:#1A5968; --menta:#7BC4B3;
-    --branco:#FDFFFC; --grafite:#24282B; --cinza:#EEF5F4;
-    --vidro:rgba(253,255,252,.12); --vidro-borda:rgba(253,255,252,.28);
+  :root {
+    --turquesa: #539DAA; --turquesa-escuro: #357F8D; --petroleo: #1A5968; --petroleo-noite: #0F3A45;
+    --menta: #7BC4B3; --menta-claro: #CBEBE3; --branco: #FDFFFC; --grafite: #24282B;
+    --cinza: #EEF5F4; --texto-2: #4F5B5E; --linha: #DBE9E7;
+    --ml: #FFE600; --ml-azul: #2D3277; --zap: #15803D; --zap-escuro: #116A32;
+    --sombra: 0 22px 50px rgba(26,89,104,.16);
+    --curva: cubic-bezier(.2,.8,.2,1); --mola: cubic-bezier(.34,1.56,.64,1);
+    --aviso: 0px;
   }
-  *{margin:0;padding:0;box-sizing:border-box}
-  html{scroll-behavior:smooth;scroll-padding-top:80px}
-  body{font-family:'Poppins',sans-serif;background:var(--branco);color:var(--grafite);line-height:1.6;overflow-x:hidden}
-  a{text-decoration:none;color:inherit}
-  .container{width:min(1150px,92%);margin:auto;position:relative;z-index:2}
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; scroll-padding-top: calc(96px + var(--aviso)); }
+  body { font-family: Poppins, system-ui, sans-serif; background: var(--branco); color: var(--grafite); line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  body.trava { overflow: hidden; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; text-decoration: none; }
+  button, input { font: inherit; color: inherit; }
+  button { background: none; border: 0; cursor: pointer; }
+  :focus-visible { outline: 3px solid var(--menta); outline-offset: 3px; border-radius: 10px; }
+  .env { width: min(1180px, 100% - 48px); margin-inline: auto; position: relative; z-index: 2; }
+  .secao { padding: 110px 0; position: relative; }
+  .i { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; flex: none; }
 
-  /* ===== ANIMAÇÕES ===== */
-  @keyframes subir{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:none}}
-  @keyframes surgir{from{opacity:0;transform:scale(.7) rotate(-8deg)}to{opacity:1;transform:none}}
-  @keyframes flutuar{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
-  @keyframes bolha{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(30px,-25px) scale(1.12)}}
-  @keyframes pulso{0%{box-shadow:0 0 0 0 rgba(37,211,102,.6)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
-  @keyframes brilho{from{left:-60%}to{left:130%}}
+  /* títulos */
+  .kicker { display: inline-flex; align-items: center; gap: 10px; font-size: .76rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--turquesa-escuro); }
+  .kicker::before { content: ""; width: 26px; height: 2px; border-radius: 2px; background: var(--menta); }
+  .escura .kicker { color: var(--menta); }
+  h2 { font-size: clamp(2rem, 4vw, 3.1rem); line-height: 1.1; font-weight: 800; letter-spacing: -.02em; margin-top: 12px; color: var(--petroleo); }
+  h2 em { font-style: normal; color: var(--turquesa); }
+  .escura h2 { color: var(--branco); }
+  .escura h2 em { color: var(--menta); }
+  .intro { color: var(--texto-2); max-width: 58ch; margin-top: 14px; font-size: 1.04rem; }
+  .escura .intro { color: rgba(253,255,252,.78); }
+  .cabeca { display: flex; justify-content: space-between; align-items: flex-end; gap: 20px 40px; flex-wrap: wrap; }
+  .centro { text-align: center; }
+  .centro .intro { margin-inline: auto; }
 
-  .reveal{opacity:0;transform:translateY(45px);transition:opacity .8s ease,transform .8s ease}
-  .reveal.esq{transform:translateX(-50px)}
-  .reveal.dir{transform:translateX(50px)}
-  .reveal.zoom{transform:scale(.88)}
-  .reveal.visivel{opacity:1;transform:none}
+  /* botões */
+  .btn { position: relative; overflow: hidden; isolation: isolate; display: inline-flex; align-items: center; justify-content: center; gap: 9px; min-height: 52px; padding: 0 24px; border-radius: 999px; font-weight: 600; font-size: .95rem; white-space: nowrap; border: 2px solid transparent; transition: transform .3s var(--mola), background .25s ease, color .25s ease, border-color .25s ease; }
+  .btn:hover { transform: translateY(-3px); }
+  .btn:active { transform: scale(.97); transition-duration: .08s; }
+  .btn::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(110deg, transparent 30%, rgba(255,255,255,.4) 50%, transparent 70%); transform: translateX(-120%); transition: transform .8s var(--curva); }
+  .btn:hover::after { transform: translateX(120%); }
+  .btn-menta { background: var(--menta); color: var(--petroleo-noite); box-shadow: 0 12px 26px rgba(123,196,179,.35); }
+  .btn-menta:hover { background: var(--branco); }
+  .btn-petroleo { background: var(--petroleo); color: var(--branco); box-shadow: 0 12px 26px rgba(26,89,104,.25); }
+  .btn-petroleo:hover { background: var(--turquesa-escuro); }
+  .btn-contorno { border-color: rgba(253,255,252,.7); color: var(--branco); background: rgba(253,255,252,.08); }
+  .btn-contorno:hover { background: var(--branco); color: var(--petroleo); }
+  .btn-claro { border-color: var(--linha); color: var(--petroleo); background: #fff; }
+  .btn-claro:hover { border-color: var(--petroleo); }
+  .btn-ml { background: var(--ml); color: var(--ml-azul); }
+  .btn-zap { background: var(--zap); color: #fff; }
+  .btn-zap:hover { background: var(--zap-escuro); }
+  .btn.pequeno { min-height: 44px; padding: 0 18px; font-size: .88rem; }
+  .seta { transition: transform .3s var(--mola); }
+  .btn:hover .seta { transform: translateX(4px); }
 
-  /* ===== VIDRO ===== */
-  .vidro{background:var(--vidro);border:1px solid var(--vidro-borda);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+  /* aviso de feriado */
+  .aviso { position: relative; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 4px 12px; padding: 9px 52px; background: var(--grafite); color: #fff; font-size: .85rem; text-align: center; }
+  .aviso[hidden] { display: none; }
+  .aviso strong { color: var(--menta); }
+  .aviso a { font-weight: 700; text-decoration: underline; }
+  .aviso button { position: absolute; right: 10px; top: 50%; translate: 0 -50%; width: 32px; height: 32px; border-radius: 50%; font-size: 1.3rem; line-height: 1; color: rgba(255,255,255,.75); }
+  .aviso button:hover { background: rgba(255,255,255,.12); color: #fff; }
 
-  /* ===== BOLHAS ===== */
-  .bolhas{position:absolute;inset:0;overflow:hidden;z-index:1;pointer-events:none}
-  .bolhas span{position:absolute;border-radius:50%;background:var(--menta);opacity:.3;filter:blur(2px);animation:bolha 12s ease-in-out infinite}
-  .bolhas span:nth-child(1){width:320px;height:320px;top:-80px;right:-60px}
-  .bolhas span:nth-child(2){width:180px;height:180px;bottom:-40px;left:8%;animation-delay:-4s;background:var(--branco);opacity:.12}
-  .bolhas span:nth-child(3){width:120px;height:120px;top:40%;left:45%;animation-delay:-8s;background:var(--petroleo);opacity:.3}
+  /* topo */
+  .topo { position: fixed; top: 0; left: 0; right: 0; z-index: 50; padding-top: env(safe-area-inset-top, 0px); }
+  .topo .env { margin-top: 12px; transition: margin .35s var(--curva); }
+  .topo.rolou .env { margin-top: 8px; }
+  .barra { position: relative; display: flex; align-items: center; gap: 18px; height: 72px; padding: 0 10px 0 10px; border-radius: 999px; background: rgba(15,58,69,.55); border: 1px solid rgba(253,255,252,.18); -webkit-backdrop-filter: blur(16px) saturate(1.3); backdrop-filter: blur(16px) saturate(1.3); color: var(--branco); transition: height .35s var(--curva), background .35s ease, box-shadow .35s ease; }
+  .topo.rolou .barra { height: 62px; background: rgba(15,58,69,.92); box-shadow: 0 16px 40px rgba(15,58,69,.3); }
+  .marca { display: flex; align-items: center; gap: 10px; min-width: 0; }
+  .marca img { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 2px solid var(--menta); background: #fff; transition: transform .5s var(--mola); }
+  .marca:hover img { transform: rotate(-10deg) scale(1.06); }
+  .marca span { display: flex; flex-direction: column; line-height: 1.05; }
+  .marca b { font-size: 1.2rem; font-weight: 800; letter-spacing: -.01em; }
+  .marca small { font-size: .68rem; font-weight: 500; color: var(--menta-claro); letter-spacing: .04em; }
+  .menu { display: flex; gap: 2px; margin-left: auto; font-weight: 500; font-size: .9rem; }
+  .menu a { padding: 9px 14px; border-radius: 999px; transition: background .25s ease, color .25s ease; }
+  .menu a:hover, .menu a.aqui { background: rgba(123,196,179,.2); color: var(--menta-claro); }
+  .acoes-topo { display: flex; align-items: center; gap: 8px; }
+  .btn-orc-topo { position: relative; width: 46px; height: 46px; border-radius: 50%; display: grid; place-items: center; background: rgba(253,255,252,.12); border: 1px solid rgba(253,255,252,.22); transition: background .25s ease, transform .3s var(--mola); }
+  .btn-orc-topo:hover { background: rgba(253,255,252,.24); transform: translateY(-2px); }
+  .contagem { position: absolute; top: -4px; right: -4px; min-width: 21px; height: 21px; padding: 0 5px; border-radius: 99px; background: var(--menta); color: var(--petroleo-noite); font-size: .7rem; font-weight: 800; display: grid; place-items: center; border: 2px solid var(--petroleo); }
+  .contagem[hidden] { display: none; }
+  .contagem.pula { animation: pula .45s var(--mola); }
+  @keyframes pula { 40% { transform: scale(1.4); } }
+  .menu-btn { display: none; width: 44px; height: 44px; border-radius: 50%; place-items: center; }
+  .menu-btn:hover { background: rgba(253,255,252,.12); }
+  .menu-btn .i { width: 24px; height: 24px; }
+  .menu-btn .x, .topo.menu-aberto .menu-btn .tracos { display: none; }
+  .topo.menu-aberto .menu-btn .x { display: block; }
 
-  /* ===== CABEÇALHO ===== */
-  header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(26,89,104,.45);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--vidro-borda);transition:background .4s;animation:subir .8s ease both}
-  header.rolou{background:rgba(26,89,104,.95)}
-  .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0;gap:16px}
-  .marca{display:flex;align-items:center;gap:10px;color:var(--branco);font-weight:800;font-size:1.3rem}
-  .marca img{width:50px;height:50px;border-radius:50%;object-fit:cover;border:2px solid var(--menta);transition:transform .5s}
-  .marca:hover img{transform:rotate(-10deg) scale(1.08)}
-  .menu{display:flex;gap:24px;color:var(--branco);font-weight:500}
-  .menu a{position:relative}
-  .menu a::after{content:"";position:absolute;left:0;bottom:-4px;width:0;height:2px;background:var(--menta);transition:width .3s}
-  .menu a:hover::after{width:100%}
+  /* hero */
+  .hero { position: relative; overflow: hidden; color: var(--branco); padding: calc(150px + var(--aviso)) 0 110px;
+    background:
+      radial-gradient(700px 500px at 85% 15%, rgba(123,196,179,.35), transparent 60%),
+      radial-gradient(600px 500px at 0% 100%, rgba(15,58,69,.9), transparent 60%),
+      linear-gradient(135deg, var(--turquesa-escuro) 0%, var(--petroleo) 60%, var(--petroleo-noite) 100%); }
+  .hero::before { content: ""; position: absolute; inset: 0; background-image: linear-gradient(rgba(253,255,252,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(253,255,252,.05) 1px, transparent 1px); background-size: 56px 56px; -webkit-mask-image: radial-gradient(circle at 70% 40%, #000, transparent 70%); mask-image: radial-gradient(circle at 70% 40%, #000, transparent 70%); }
+  .hero-grade { display: grid; grid-template-columns: 1.15fr .85fr; gap: 48px; align-items: center; }
+  .status { display: inline-flex; align-items: center; gap: 10px; padding: 8px 16px 8px 12px; border-radius: 999px; font-size: .84rem; font-weight: 600; background: rgba(253,255,252,.1); border: 1px solid rgba(253,255,252,.22); }
+  .status i { width: 9px; height: 9px; border-radius: 50%; background: var(--menta-claro); flex: none; }
+  .status.aberto i { background: #4ADE80; animation: pulso 2.2s ease-out infinite; }
+  .status.fechado i { background: #F4A6A6; }
+  @keyframes pulso { 0% { box-shadow: 0 0 0 0 rgba(74,222,128,.55); } 70% { box-shadow: 0 0 0 10px rgba(74,222,128,0); } 100% { box-shadow: 0 0 0 0 rgba(74,222,128,0); } }
+  .hero h1 { margin-top: 22px; font-size: clamp(2.6rem, 6vw, 4.6rem); line-height: 1.02; font-weight: 800; letter-spacing: -.03em; }
+  .hero h1 span { display: block; color: var(--menta); }
+  .hero .sub { margin-top: 20px; max-width: 48ch; font-size: 1.1rem; color: rgba(253,255,252,.85); }
+  .hero .botoes { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+  .selos { list-style: none; display: flex; flex-wrap: wrap; gap: 10px 22px; margin-top: 30px; font-size: .86rem; font-weight: 500; color: rgba(253,255,252,.85); }
+  .selos li { display: inline-flex; align-items: center; gap: 8px; }
+  .selos .i { width: 18px; height: 18px; color: var(--menta); }
+  .hero-visual { position: relative; display: grid; place-items: center; min-height: 460px; }
+  .anel { position: absolute; width: min(440px, 100%); aspect-ratio: 1; border-radius: 50%; border: 1.5px dashed rgba(123,196,179,.5); animation: gira 50s linear infinite; will-change: transform; }
+  .anel::after { content: ""; position: absolute; top: -7px; left: 50%; width: 14px; height: 14px; margin-left: -7px; border-radius: 50%; background: var(--menta); box-shadow: 0 0 0 6px rgba(123,196,179,.25); }
+  @keyframes gira { to { transform: rotate(360deg); } }
+  .halo { position: absolute; width: 380px; aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle, rgba(123,196,179,.45), transparent 65%); }
+  .logo-hero { position: relative; width: min(320px, 72%); aspect-ratio: 1; border-radius: 50%; border: 6px solid var(--branco); overflow: hidden; background: #fff; box-shadow: 0 30px 70px rgba(5,25,30,.45); animation: flutua 6s ease-in-out infinite; }
+  .logo-hero img { width: 100%; height: 100%; object-fit: cover; }
+  .logo-hero b { position: absolute; inset: 0; display: grid; place-items: center; font-size: 2rem; font-weight: 800; color: var(--petroleo); }
+  @keyframes flutua { 50% { transform: translateY(-14px); } }
+  .chip { position: absolute; z-index: 2; display: flex; align-items: center; gap: 12px; padding: 13px 16px; border-radius: 20px; max-width: 245px; background: rgba(253,255,252,.14); border: 1px solid rgba(253,255,252,.3); box-shadow: 0 16px 34px rgba(5,25,30,.25); animation: chega 1s var(--curva) .8s both, flutua 7s ease-in-out 1.8s infinite; }
+  .chip .ic { width: 42px; height: 42px; border-radius: 13px; display: grid; place-items: center; background: var(--menta); color: var(--petroleo-noite); flex: none; }
+  .chip b { display: block; font-size: .95rem; line-height: 1.2; }
+  .chip span { display: block; font-size: .76rem; color: rgba(253,255,252,.8); line-height: 1.35; margin-top: 2px; }
+  .c1 { left: -4%; bottom: 12%; }
+  .c2 { right: -4%; top: 10%; animation-delay: 1s, -3s; }
+  @keyframes chega { from { opacity: 0; transform: translateY(20px) scale(.94); } to { opacity: 1; transform: none; } }
+  .onda { position: absolute; left: 0; right: 0; bottom: -1px; height: 70px; color: var(--branco); }
+  .onda svg { width: 100%; height: 100%; display: block; }
 
-  /* ===== BOTÕES ===== */
-  .btn{display:inline-block;padding:12px 22px;border-radius:30px;font-weight:600;transition:transform .25s,background .25s,color .25s;cursor:pointer;border:none;font-family:inherit;font-size:.95rem;text-align:center;position:relative;overflow:hidden}
-  .btn:hover{transform:translateY(-3px)}
-  .btn::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:rgba(255,255,255,.35);transform:skewX(-20deg);opacity:0}
-  .btn:hover::after{opacity:1;animation:brilho .7s ease}
-  .btn-menta{background:var(--menta);color:var(--petroleo)}
-  .btn-menta:hover{background:var(--branco)}
-  .btn-contorno{border:2px solid var(--branco);color:var(--branco);background:rgba(255,255,255,.08)}
-  .btn-contorno:hover{background:var(--branco);color:var(--petroleo)}
-  .btn-ml{background:#FFE600;color:#2D3277}
-  .btn-petroleo{background:var(--petroleo);color:var(--branco)}
-  .btn-petroleo:hover{background:var(--turquesa-escuro)}
-  a:focus-visible,button:focus-visible{outline:3px solid var(--menta);outline-offset:3px}
+  /* faixa */
+  .faixa { overflow: hidden; padding: 20px 0; background: var(--branco); border-bottom: 1px solid var(--linha); }
+  .trilho { display: flex; width: max-content; animation: corre 40s linear infinite; will-change: transform; }
+  .faixa:hover .trilho { animation-play-state: paused; }
+  .grupo { display: flex; gap: 34px; padding-right: 34px; }
+  .grupo span { display: inline-flex; align-items: center; gap: 34px; font-size: 1.15rem; font-weight: 700; color: var(--petroleo); white-space: nowrap; }
+  .grupo span::after { content: ""; width: 9px; height: 9px; border-radius: 3px; rotate: 45deg; background: var(--menta); }
+  @keyframes corre { to { transform: translateX(-50%); } }
+  .pausado, .pausado *, .pausado *::before, .pausado *::after { animation-play-state: paused !important; }
 
-  /* ===== HERO ===== */
-  .hero{background:linear-gradient(135deg,var(--turquesa-escuro) 0%,var(--petroleo) 100%);color:var(--branco);padding:140px 0 100px;position:relative;overflow:hidden}
-  .hero-grid{display:grid;grid-template-columns:1.3fr 1fr;align-items:center;gap:40px}
-  .hero-texto{padding:36px;border-radius:24px}
-  .hero-texto > *{animation:subir .9s ease both}
-  .hero-texto > *:nth-child(2){animation-delay:.2s}
-  .hero-texto > *:nth-child(3){animation-delay:.4s}
-  .hero h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;font-weight:800}
-  .hero h1 span{color:var(--menta)}
-  .hero p{font-size:1.1rem;margin:18px 0 28px;max-width:520px}
-  .hero-botoes{display:flex;gap:12px;flex-wrap:wrap}
-  .hero-logo{display:flex;justify-content:center;animation:surgir 1.1s .3s ease both}
-  .hero-logo img{width:min(340px,80%);border-radius:50%;border:6px solid var(--branco);animation:flutuar 5s ease-in-out infinite}
+  /* benefícios */
+  .beneficios { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 60px; }
+  .beneficio { display: flex; gap: 14px; align-items: flex-start; padding: 22px; border-radius: 22px; background: var(--cinza); border: 1px solid var(--linha); }
+  .beneficio:hover { transform: translateY(-6px); background: #fff; box-shadow: var(--sombra); }
+  .beneficio .ic { width: 48px; height: 48px; border-radius: 15px; display: grid; place-items: center; background: var(--petroleo); color: var(--menta); flex: none; }
+  .beneficio b { display: block; color: var(--petroleo); line-height: 1.25; }
+  .beneficio span { font-size: .88rem; color: var(--texto-2); line-height: 1.45; }
 
-  /* ===== BENEFÍCIOS ===== */
-  .beneficios{background:var(--petroleo);color:var(--branco);position:relative;overflow:hidden}
-  .beneficios .container{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;padding:30px 0}
-  .beneficio{display:flex;gap:12px;align-items:center;padding:16px 18px;border-radius:16px;transition:transform .3s,background .3s}
-  .beneficio:hover{transform:translateY(-5px);background:rgba(253,255,252,.2)}
-  .beneficio b{display:block;color:var(--menta)}
-  .icone{font-size:1.8rem}
+  /* catálogo */
+  .ferramentas { display: flex; justify-content: space-between; align-items: center; gap: 14px 20px; flex-wrap: wrap; margin-top: 34px; }
+  .busca { position: relative; flex: 1 1 300px; max-width: 420px; }
+  .busca .i { position: absolute; left: 18px; top: 50%; translate: 0 -50%; color: var(--turquesa-escuro); }
+  .busca input { width: 100%; height: 52px; padding: 0 44px 0 50px; border-radius: 999px; border: 2px solid var(--linha); background: #fff; font-size: .95rem; transition: border-color .25s ease, box-shadow .25s ease; }
+  .busca input:focus { outline: none; border-color: var(--turquesa); box-shadow: 0 0 0 4px rgba(83,157,170,.18); }
+  .busca .limpar { position: absolute; right: 10px; top: 50%; translate: 0 -50%; width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; color: var(--texto-2); }
+  .busca .limpar:hover { background: var(--cinza); }
+  .busca .limpar[hidden] { display: none; }
+  .filtros { position: relative; display: flex; gap: 2px; padding: 5px; border-radius: 999px; background: var(--cinza); border: 1px solid var(--linha); max-width: 100%; overflow-x: auto; scrollbar-width: none; }
+  .filtros::-webkit-scrollbar { display: none; }
+  .filtros[hidden] { display: none; }
+  .filtro { position: relative; z-index: 1; padding: 10px 18px; border-radius: 999px; font-weight: 600; font-size: .88rem; color: var(--petroleo); white-space: nowrap; transition: color .3s ease; }
+  .filtro[aria-pressed="true"] { color: var(--branco); }
+  .pilula { position: absolute; top: 5px; bottom: 5px; left: 5px; width: 0; border-radius: 999px; background: var(--petroleo); transition: left .45s var(--mola), width .45s var(--mola); }
+  .contador { margin-top: 18px; font-size: .88rem; font-weight: 500; color: var(--texto-2); }
+  .grade { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; margin-top: 18px; }
+  .card { position: relative; display: flex; flex-direction: column; border-radius: 22px; overflow: hidden; background: #fff; border: 1px solid var(--linha); transition: transform .45s var(--mola), border-color .3s ease, box-shadow .3s ease; }
+  .card:hover { transform: translateY(-8px); border-color: var(--turquesa); box-shadow: var(--sombra); }
+  .card.surge { animation: surge .55s var(--mola) both; animation-delay: calc(var(--i, 0) * 60ms); }
+  @keyframes surge { from { opacity: 0; transform: translateY(16px) scale(.96); } to { opacity: 1; transform: none; } }
+  .card-img { position: relative; display: grid; place-items: center; aspect-ratio: 1; padding: 18px; background: #fff; overflow: hidden; }
+  .card-img img { position: relative; width: 100%; height: 100%; object-fit: contain; transition: transform .6s var(--curva); }
+  .card:hover .card-img img { transform: scale(1.07); }
+  .sem-img { position: absolute; width: 56px; height: 56px; color: var(--linha); stroke-width: 1.4; }
+  .tag-cat { position: absolute; left: 12px; top: 12px; padding: 5px 11px; border-radius: 999px; background: var(--petroleo); color: var(--branco); font-size: .68rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+  .card-corpo { display: flex; flex-direction: column; gap: 10px; flex: 1; padding: 16px 16px 18px; border-top: 1px solid var(--cinza); }
+  .marca-tag { align-self: flex-start; font-size: .7rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--turquesa-escuro); }
+  .card h3 { font-size: .98rem; font-weight: 500; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .preco { font-size: 1.3rem; font-weight: 800; color: var(--petroleo); }
+  .card-acoes { margin-top: auto; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .btn-card { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 42px; padding: 0 10px; border-radius: 12px; font-size: .8rem; font-weight: 700; transition: transform .25s var(--mola), filter .2s ease, background .2s ease; }
+  .btn-card .i { width: 17px; height: 17px; }
+  .btn-card:hover { transform: translateY(-2px); filter: brightness(.96); }
+  .btn-card.ml { background: var(--ml); color: var(--ml-azul); }
+  .btn-card.zap { background: var(--zap); color: #fff; }
+  .btn-add { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 40px; border-radius: 12px; border: 1.5px dashed var(--turquesa); color: var(--turquesa-escuro); font-size: .8rem; font-weight: 600; transition: background .25s ease, color .25s ease, border-color .25s ease; }
+  .btn-add .i { width: 16px; height: 16px; }
+  .btn-add:hover { background: var(--cinza); }
+  .btn-add.no-orc { border-style: solid; border-color: var(--petroleo); background: var(--petroleo); color: var(--branco); }
+  .vazio { display: none; margin-top: 18px; padding: 34px; border-radius: 24px; text-align: center; background: var(--cinza); border: 1px dashed var(--turquesa); }
+  .vazio.mostra { display: block; }
+  .vazio b { display: block; font-size: 1.15rem; color: var(--petroleo); }
+  .vazio p { color: var(--texto-2); margin: 6px 0 18px; }
+  .catalogo-rodape { margin-top: 36px; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
 
-  /* ===== SEÇÕES ===== */
-  section{padding:80px 0;position:relative;overflow:hidden}
-  .titulo{text-align:center;margin-bottom:38px}
-  .titulo h2{font-size:2rem;color:var(--petroleo);font-weight:800}
-  .titulo p{color:#4f5b5e}
-  .escura .titulo h2{color:var(--branco)}
-  .escura .titulo p{color:var(--cinza)}
+  /* qual máquina */
+  .ajuda { background: var(--cinza); border-radius: 48px; margin: 0 16px; }
+  .ajuda-grade { display: grid; grid-template-columns: .9fr 1.1fr; gap: 50px; align-items: center; margin-top: 10px; }
+  .necessidades { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 30px; }
+  .nec { display: flex; align-items: center; gap: 12px; padding: 14px 16px; border-radius: 18px; background: #fff; border: 2px solid transparent; font-weight: 600; font-size: .92rem; color: var(--petroleo); text-align: left; transition: border-color .25s ease, transform .3s var(--mola), background .25s ease; }
+  .nec .ic { width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; background: var(--cinza); color: var(--turquesa-escuro); flex: none; transition: background .25s ease, color .25s ease; }
+  .nec:hover { transform: translateY(-3px); }
+  .nec[aria-pressed="true"] { border-color: var(--petroleo); }
+  .nec[aria-pressed="true"] .ic { background: var(--petroleo); color: var(--menta); }
+  .resposta { position: relative; overflow: hidden; isolation: isolate; border-radius: 32px; padding: 40px; color: var(--branco); min-height: 340px; display: flex; flex-direction: column;
+    background: radial-gradient(500px 340px at 100% 0%, rgba(123,196,179,.4), transparent 65%), var(--petroleo); }
+  .resposta::after { content: ""; position: absolute; width: 260px; height: 260px; right: -90px; bottom: -90px; border-radius: 50%; border: 1px solid rgba(123,196,179,.4); box-shadow: 0 0 0 36px rgba(123,196,179,.06); z-index: -1; }
+  .resposta .ic-grande { width: 64px; height: 64px; border-radius: 20px; display: grid; place-items: center; background: var(--menta); color: var(--petroleo-noite); }
+  .resposta .ic-grande .i { width: 32px; height: 32px; }
+  .resposta h3 { font-size: 1.8rem; font-weight: 800; line-height: 1.15; margin-top: 20px; }
+  .resposta p { margin-top: 10px; color: rgba(253,255,252,.82); }
+  .resposta .botoes { display: flex; flex-wrap: wrap; gap: 10px; margin-top: auto; padding-top: 26px; }
+  .resposta.troca > * { animation: entra-leve .45s var(--curva) both; }
 
-  /* ===== CATÁLOGO ===== */
-  .filtros{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:32px}
-  .filtro{padding:8px 18px;border-radius:30px;border:2px solid var(--petroleo);background:none;color:var(--petroleo);font-family:inherit;font-weight:500;cursor:pointer;transition:.3s}
-  .filtro.ativo,.filtro:hover{background:var(--petroleo);color:var(--branco)}
-  .grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:22px}
-  .card{background:#fff;border-radius:18px;overflow:hidden;border:1px solid #dbe9e7;display:flex;flex-direction:column;transition:opacity .6s ease,transform .6s ease,border-color .3s,box-shadow .3s}
-  .card.visivel:hover{transform:translateY(-8px);border-color:var(--turquesa);box-shadow:0 14px 30px rgba(26,89,104,.18)}
-  .card-img{aspect-ratio:1;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden;font-size:4rem;padding:14px}
-  .card-img img{width:100%;height:100%;object-fit:contain;transition:transform .5s}
-  .card:hover .card-img img{transform:scale(1.08)}
-  .card-img.sem-img::after{content:"📦"}
-  .card-corpo{padding:14px 16px 18px;display:flex;flex-direction:column;gap:8px;flex:1;border-top:1px solid #eef3f2}
-  .card h3{font-size:1rem;font-weight:500;line-height:1.35;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-  .ver-ml{margin-top:auto;font-size:.85rem;font-weight:600;color:var(--petroleo)}
-  .card:hover .ver-ml{text-decoration:underline}
-  .ver-todos{text-align:center;margin-top:40px}
+  /* branco */
+  .branco { background: var(--petroleo-noite); color: var(--branco); border-radius: 48px; margin: 0 16px; overflow: hidden;
+    background: radial-gradient(800px 500px at 90% 0%, rgba(83,157,170,.45), transparent 60%), radial-gradient(600px 500px at 0% 100%, rgba(26,89,104,.9), transparent 60%), var(--petroleo-noite); }
+  .branco-topo { display: grid; grid-template-columns: 1.1fr .9fr; gap: 50px; align-items: end; }
+  .numeros { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .numero { padding: 20px 18px; border-radius: 22px; background: rgba(253,255,252,.07); border: 1px solid rgba(253,255,252,.14); }
+  .numero b { display: block; font-size: 2.2rem; font-weight: 800; line-height: 1; color: var(--menta); letter-spacing: -.02em; }
+  .numero span { display: block; margin-top: 8px; font-size: .82rem; color: rgba(253,255,252,.75); line-height: 1.35; }
+  .linhas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 48px; }
+  .linha { display: flex; flex-direction: column; gap: 10px; padding: 26px; border-radius: 26px; background: rgba(253,255,252,.07); border: 1px solid rgba(253,255,252,.14); }
+  .linha:hover { transform: translateY(-6px); background: rgba(253,255,252,.12); }
+  .linha .ic { width: 52px; height: 52px; border-radius: 16px; display: grid; place-items: center; background: rgba(123,196,179,.16); color: var(--menta); transition: transform .45s var(--mola), background .3s ease, color .3s ease; }
+  .linha .ic .i { width: 26px; height: 26px; }
+  .linha:hover .ic { background: var(--menta); color: var(--petroleo-noite); transform: rotate(-8deg) scale(1.05); }
+  .linha b { font-size: 1.15rem; }
+  .linha span { font-size: .9rem; color: rgba(253,255,252,.75); line-height: 1.5; }
+  .linha a { margin-top: auto; padding-top: 6px; display: inline-flex; align-items: center; gap: 6px; font-weight: 600; font-size: .88rem; color: var(--menta); }
+  .linha a .i { width: 16px; height: 16px; transition: transform .3s var(--mola); }
+  .linha a:hover .i { transform: translateX(4px); }
+  .nota-marca { margin-top: 28px; font-size: .76rem; color: rgba(253,255,252,.5); }
 
-  /* ===== MERCADO LIVRE ===== */
-  .lojas-ml{background:var(--turquesa-escuro)}
-  .lojas-grid,.unidades-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
-  .loja{border-radius:20px;padding:32px;text-align:center;color:var(--branco);transition:transform .35s,background .35s}
-  .loja:hover{transform:translateY(-8px);background:rgba(253,255,252,.22)}
-  .loja h3{font-size:1.3rem;margin-bottom:6px}
-  .loja p{margin-bottom:20px}
+  /* mercado livre */
+  .lojas { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 44px; }
+  .loja { position: relative; overflow: hidden; display: flex; flex-direction: column; gap: 10px; padding: 32px; border-radius: 28px; background: #fff; border: 1px solid var(--linha); }
+  .loja:hover { transform: translateY(-6px); box-shadow: var(--sombra); }
+  .loja::before { content: ""; position: absolute; right: -50px; top: -50px; width: 180px; height: 180px; border-radius: 50%; background: radial-gradient(circle, rgba(255,230,0,.45), transparent 70%); }
+  .loja .ic { width: 56px; height: 56px; border-radius: 18px; display: grid; place-items: center; background: var(--ml); color: var(--ml-azul); }
+  .loja .ic .i { width: 28px; height: 28px; }
+  .loja h3 { font-size: 1.35rem; font-weight: 700; color: var(--petroleo); }
+  .loja p { color: var(--texto-2); }
+  .loja .btn { align-self: flex-start; margin-top: 10px; }
+  .passos { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 18px; counter-reset: p; }
+  .passo { display: flex; gap: 14px; align-items: flex-start; padding: 22px; border-radius: 22px; background: var(--cinza); }
+  .passo::before { counter-increment: p; content: counter(p); width: 38px; height: 38px; border-radius: 50%; display: grid; place-items: center; flex: none; background: var(--petroleo); color: var(--menta); font-weight: 800; }
+  .passo b { display: block; color: var(--petroleo); }
+  .passo span { font-size: .88rem; color: var(--texto-2); }
 
-  /* ===== UNIDADES ===== */
-  .unidades{background:var(--petroleo)}
-  .unidade{color:var(--branco);border-radius:20px;padding:30px;transition:transform .35s,background .35s}
-  .unidade:hover{transform:translateY(-8px);background:rgba(253,255,252,.2)}
-  .unidade h3{color:var(--menta);font-size:1.3rem;margin-bottom:10px}
-  .unidade p{margin-bottom:6px}
-  .horario{margin-top:12px;padding-top:12px;border-top:1px solid var(--vidro-borda)}
-  .unidade .btn{margin-top:14px}
+  /* unidades */
+  .unidades { background: linear-gradient(160deg, var(--petroleo) 0%, var(--petroleo-noite) 100%); color: var(--branco); border-radius: 48px; margin: 0 16px; }
+  .unidades-grade { display: grid; grid-template-columns: 1fr 1fr .9fr; gap: 18px; margin-top: 44px; }
+  .unidade { display: flex; flex-direction: column; gap: 12px; padding: 30px; border-radius: 28px; background: rgba(253,255,252,.07); border: 1px solid rgba(253,255,252,.14); }
+  .unidade:hover { transform: translateY(-6px); background: rgba(253,255,252,.11); }
+  .unidade .topo-u { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+  .unidade .pino { width: 50px; height: 50px; border-radius: 16px; display: grid; place-items: center; background: var(--menta); color: var(--petroleo-noite); flex: none; animation: flutua 3.4s ease-in-out infinite; }
+  .unidade h3 { font-size: 1.45rem; font-weight: 700; color: var(--menta); line-height: 1.15; }
+  .unidade address { font-style: normal; color: rgba(253,255,252,.85); }
+  .unidade address span { display: block; font-size: .85rem; color: rgba(253,255,252,.6); }
+  .hora { display: flex; gap: 10px; align-items: flex-start; padding-top: 12px; border-top: 1px solid rgba(253,255,252,.14); font-size: .9rem; color: rgba(253,255,252,.85); }
+  .hora .i { width: 18px; height: 18px; margin-top: 3px; color: var(--menta); }
+  .unidade .botoes { display: grid; gap: 8px; margin-top: auto; padding-top: 8px; }
+  .feriados { padding: 28px; border-radius: 28px; background: var(--branco); color: var(--grafite); }
+  .feriados h3 { font-size: 1.25rem; font-weight: 700; color: var(--petroleo); }
+  .feriados > p { font-size: .82rem; color: var(--texto-2); margin-top: 4px; }
+  .lista-feriados { list-style: none; display: grid; gap: 8px; margin-top: 16px; }
+  .lf { display: flex; align-items: center; gap: 12px; padding: 9px 10px; border-radius: 16px; background: var(--cinza); }
+  .lf .data { width: 48px; height: 48px; border-radius: 13px; display: grid; place-items: center; align-content: center; line-height: 1; flex: none; background: var(--petroleo); color: #fff; }
+  .lf .data b { font-size: 1.15rem; font-weight: 800; }
+  .lf .data small { font-size: .58rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--menta); margin-top: 2px; }
+  .lf strong { display: block; font-size: .84rem; font-weight: 600; line-height: 1.25; }
+  .lf > div > span { font-size: .74rem; color: var(--texto-2); }
+  .tag { margin-left: auto; padding: 4px 8px; border-radius: 999px; font-size: .62rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; white-space: nowrap; }
+  .tag.fecha { background: rgba(26,89,104,.12); color: var(--petroleo); }
+  .tag.abre { background: rgba(21,128,61,.12); color: var(--zap); }
+  .tag.neutra { background: rgba(36,40,43,.07); color: var(--texto-2); }
+  .fonte { margin-top: 12px; font-size: .72rem; color: var(--texto-2); }
 
-  /* ===== RODAPÉ ===== */
-  footer{background:var(--grafite);color:#cfd8d7;padding:40px 0 90px;font-size:.9rem}
-  .rodape{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px}
-  footer h4{color:var(--menta);margin-bottom:8px}
-  footer a:hover{color:var(--menta)}
-  .copy{text-align:center;margin-top:30px;padding-top:20px;border-top:1px solid #3a4044;font-size:.8rem}
+  /* dúvidas */
+  .duvidas-grade { display: grid; grid-template-columns: .8fr 1.2fr; gap: 60px; align-items: start; }
+  .duvidas-grade .btn { margin-top: 26px; }
+  .faq { display: grid; gap: 10px; }
+  .faq details { border-radius: 20px; background: var(--cinza); border: 1px solid var(--linha); overflow: hidden; }
+  .faq details[open] { background: #fff; box-shadow: 0 10px 30px rgba(26,89,104,.08); }
+  .faq summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 20px 18px 22px; font-weight: 600; color: var(--petroleo); }
+  .faq summary::-webkit-details-marker { display: none; }
+  .mais { width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; flex: none; background: #fff; color: var(--turquesa-escuro); transition: transform .4s var(--mola), background .25s ease, color .25s ease; }
+  .mais .i { width: 17px; height: 17px; stroke-width: 2.4; }
+  .faq details[open] .mais { transform: rotate(45deg); background: var(--petroleo); color: var(--menta); }
+  .faq p { padding: 0 22px 20px; color: var(--texto-2); font-size: .94rem; }
+  .faq details[open] p { animation: entra-leve .4s var(--curva); }
 
-  /* ===== WHATSAPP FLUTUANTE ===== */
-  .wpp-flutuante{position:fixed;right:20px;bottom:20px;background:#25D366;color:#fff;padding:14px 20px;border-radius:40px;font-weight:600;z-index:99;animation:surgir .8s 1s ease both,pulso 2s 2s infinite;transition:transform .3s;box-shadow:0 6px 18px rgba(0,0,0,.2)}
-  .wpp-flutuante:hover{transform:scale(1.08)}
+  /* cta */
+  .cta { text-align: center; padding: 40px 0 110px; }
+  .cta-caixa { position: relative; overflow: hidden; isolation: isolate; border-radius: 40px; padding: 64px 32px; color: var(--branco); background: linear-gradient(135deg, var(--turquesa) 0%, var(--petroleo) 100%); }
+  .cta-caixa::before, .cta-caixa::after { content: ""; position: absolute; border-radius: 50%; z-index: -1; }
+  .cta-caixa::before { width: 360px; height: 360px; left: -120px; top: -160px; background: rgba(123,196,179,.35); }
+  .cta-caixa::after { width: 280px; height: 280px; right: -80px; bottom: -140px; background: rgba(15,58,69,.5); }
+  .cta h2 { color: var(--branco); max-width: 20ch; margin-inline: auto; }
+  .cta p { color: rgba(253,255,252,.85); margin: 14px auto 0; max-width: 52ch; }
+  .cta .botoes { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
 
-  @media(max-width:800px){
-    .menu{display:none}
-    .hero{padding:110px 0 70px}
-    .hero-grid{grid-template-columns:1fr;text-align:center}
-    .hero-texto{padding:24px}
-    .hero p{margin-inline:auto}
-    .hero-botoes{justify-content:center}
-    .hero-logo{order:-1}
-    .hero-logo img{width:170px}
-    .bolhas span{animation:none}
-    section{padding:60px 0}
-    .titulo h2{font-size:1.7rem}
+  /* rodapé */
+  footer { background: var(--grafite); color: #CFD8D7; padding: 64px 0 calc(28px + env(safe-area-inset-bottom, 0px)); font-size: .9rem; }
+  .rodape-grade { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 32px; }
+  .rodape-marca { display: flex; align-items: center; gap: 12px; }
+  .rodape-marca img { width: 58px; height: 58px; border-radius: 50%; object-fit: cover; border: 2px solid var(--menta); background: #fff; }
+  .rodape-marca b { font-size: 1.25rem; color: var(--branco); font-weight: 800; }
+  .rodape-desc { margin-top: 14px; max-width: 36ch; color: #AFBCBB; }
+  footer h4 { color: var(--menta); font-size: .76rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; margin-bottom: 12px; }
+  footer ul { list-style: none; display: grid; gap: 8px; }
+  footer a:hover { color: var(--menta); }
+  .empresa { margin-top: 44px; padding-top: 22px; border-top: 1px solid #3A4044; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px 24px; font-size: .8rem; color: #95A3A2; }
+
+  /* flutuantes */
+  .flutuantes { position: fixed; right: 20px; bottom: calc(20px + env(safe-area-inset-bottom, 0px)); z-index: 45; display: flex; flex-direction: column; align-items: flex-end; gap: 10px; transform: translateY(160%); transition: transform .5s var(--mola); }
+  .flutuantes.mostra { transform: none; }
+  .zap-flutuante { position: relative; display: flex; align-items: center; gap: 10px; height: 58px; padding: 0 22px 0 18px; border-radius: 999px; background: var(--zap); color: #fff; font-weight: 600; box-shadow: 0 14px 34px rgba(21,128,61,.4); transition: background .25s ease, transform .3s var(--mola); }
+  .zap-flutuante:hover { background: var(--zap-escuro); transform: scale(1.05); }
+  .zap-flutuante .i { width: 24px; height: 24px; }
+  .zap-flutuante::before { content: ""; position: absolute; inset: 0; border-radius: inherit; border: 2px solid var(--zap); opacity: 0; pointer-events: none; }
+  .flutuantes.mostra .zap-flutuante::before { animation: anel 2.4s ease-out 3; }
+  @keyframes anel { from { opacity: 1; } to { transform: scale(1.22); opacity: 0; } }
+  .orc-flutuante { position: relative; display: flex; align-items: center; gap: 8px; height: 50px; padding: 0 18px; border-radius: 999px; background: var(--petroleo); color: var(--branco); font-weight: 600; font-size: .9rem; box-shadow: 0 12px 30px rgba(26,89,104,.35); transition: transform .3s var(--mola); }
+  .orc-flutuante:hover { transform: scale(1.05); }
+  .orc-flutuante[hidden] { display: none; }
+  .orc-flutuante .contagem { position: static; border-color: var(--petroleo); }
+
+  /* gaveta do orçamento */
+  .veu { position: fixed; inset: 0; z-index: 60; background: rgba(15,30,35,.5); opacity: 0; pointer-events: none; transition: opacity .35s ease; }
+  .veu.aberto { opacity: 1; pointer-events: auto; }
+  .gaveta { position: fixed; top: 0; right: 0; bottom: 0; z-index: 61; width: min(440px, 100%); display: flex; flex-direction: column; background: var(--branco); box-shadow: -20px 0 60px rgba(15,30,35,.25); transform: translateX(105%); transition: transform .45s var(--curva); padding-bottom: env(safe-area-inset-bottom, 0px); }
+  .gaveta.aberta { transform: none; }
+  .gaveta-topo { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 22px 22px 18px; border-bottom: 1px solid var(--linha); }
+  .gaveta-topo h3 { font-size: 1.3rem; font-weight: 800; color: var(--petroleo); }
+  .gaveta-topo p { font-size: .82rem; color: var(--texto-2); }
+  .fechar { width: 42px; height: 42px; border-radius: 50%; display: grid; place-items: center; background: var(--cinza); }
+  .fechar:hover { background: var(--linha); }
+  .gaveta-corpo { flex: 1; overflow-y: auto; overscroll-behavior: contain; padding: 18px 22px; }
+  .itens-orc { list-style: none; display: grid; gap: 10px; }
+  .item-orc { display: grid; grid-template-columns: 1fr auto; gap: 10px; align-items: center; padding: 12px 12px 12px 16px; border-radius: 16px; background: var(--cinza); }
+  .item-orc b { font-size: .88rem; font-weight: 500; line-height: 1.35; }
+  .qtd { display: flex; align-items: center; gap: 4px; }
+  .qtd button { width: 32px; height: 32px; border-radius: 10px; display: grid; place-items: center; background: #fff; color: var(--petroleo); transition: background .2s ease; }
+  .qtd button:hover { background: var(--menta-claro); }
+  .qtd button .i { width: 15px; height: 15px; stroke-width: 2.4; }
+  .qtd span { min-width: 26px; text-align: center; font-weight: 700; color: var(--petroleo); }
+  .qtd .remover { background: transparent; color: var(--texto-2); margin-left: 2px; }
+  .orc-vazio { padding: 30px 10px; text-align: center; color: var(--texto-2); }
+  .orc-vazio .i { width: 46px; height: 46px; margin: 0 auto 10px; color: var(--linha); stroke-width: 1.4; }
+  .campo { display: grid; gap: 6px; margin-top: 18px; }
+  .campo label { font-size: .8rem; font-weight: 600; color: var(--petroleo); }
+  .campo input { height: 46px; padding: 0 14px; border-radius: 12px; border: 2px solid var(--linha); background: #fff; }
+  .campo input:focus { outline: none; border-color: var(--turquesa); }
+  .linha-add { display: grid; grid-template-columns: 1fr auto; gap: 8px; }
+  .linha-add button { width: 46px; height: 46px; border-radius: 12px; display: grid; place-items: center; background: var(--petroleo); color: var(--menta); }
+  .gaveta-rodape { display: grid; gap: 8px; padding: 16px 22px 22px; border-top: 1px solid var(--linha); }
+  .gaveta-rodape .btn { width: 100%; }
+  .limpar-orc { font-size: .84rem; font-weight: 600; color: var(--texto-2); padding: 6px; }
+  .limpar-orc:hover { color: var(--petroleo); }
+
+  /* aviso rápido */
+  .toast { position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); z-index: 70; translate: -50% 0; display: flex; align-items: center; gap: 10px; padding: 12px 18px; border-radius: 999px; background: var(--grafite); color: #fff; font-size: .88rem; font-weight: 500; box-shadow: 0 14px 34px rgba(0,0,0,.25); opacity: 0; transform: translateY(20px); pointer-events: none; transition: opacity .3s ease, transform .4s var(--mola); }
+  .toast.mostra { opacity: 1; transform: none; }
+  .toast .i { color: var(--menta); }
+
+  /* entradas */
+  .entra { animation: entra 1s var(--curva) both; animation-delay: calc(var(--d, 0) * 110ms); }
+  @keyframes entra { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: none; } }
+  @keyframes entra-leve { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  .rv { opacity: 0; transform: translateY(28px); transition: opacity .9s var(--curva), transform .9s var(--curva); transition-delay: calc(var(--d, 0) * 90ms); }
+  .rv.visivel { opacity: 1; transform: none; }
+  .escalonado > * { opacity: 0; translate: 0 26px; transition: opacity .8s var(--curva), translate .8s var(--curva), transform .45s var(--mola), background .3s ease, box-shadow .3s ease; transition-delay: calc(var(--i, 0) * 90ms), calc(var(--i, 0) * 90ms), 0s, 0s, 0s; }
+  .escalonado.visivel > * { opacity: 1; translate: 0 0; }
+
+  /* ===== responsividade ===== */
+  @media (max-width: 1100px) {
+    .beneficios { grid-template-columns: 1fr 1fr; }
+    .unidades-grade { grid-template-columns: 1fr 1fr; }
+    .feriados { grid-column: 1 / -1; }
+    .rodape-grade { grid-template-columns: 1fr 1fr; }
   }
-  @media(max-width:500px){
-    .marca{font-size:1.1rem}
-    .marca img{width:42px;height:42px}
-    .nav .btn{padding:10px 16px;font-size:.85rem}
-    .grade{grid-template-columns:repeat(2,1fr);gap:12px}
-    .card-img{padding:8px}
-    .card-corpo{padding:10px 12px 14px}
-    .card h3{font-size:.88rem}
-    .ver-ml{font-size:.78rem}
-    .wpp-flutuante{right:14px;bottom:14px;padding:14px 16px}
-    .wpp-texto{display:none}
+  @media (max-width: 980px) {
+    .menu-btn { display: grid; }
+    .menu { display: none; position: absolute; top: calc(100% + 8px); left: 0; right: 0; flex-direction: column; padding: 10px; border-radius: 24px; background: var(--petroleo-noite); border: 1px solid rgba(253,255,252,.14); box-shadow: 0 20px 50px rgba(15,58,69,.35); }
+    .topo.menu-aberto .menu { display: flex; animation: entra-leve .25s var(--curva); }
+    .menu a { padding: 14px 18px; font-size: 1rem; }
+    .acoes-topo { margin-left: auto; }
+    .hero { padding-top: calc(130px + var(--aviso)); }
+    .hero-grade { grid-template-columns: 1fr; text-align: center; gap: 10px; }
+    .hero-visual { order: -1; min-height: 340px; }
+    .anel { width: 320px; }
+    .halo { width: 280px; }
+    .logo-hero { width: 220px; }
+    .hero .sub { margin-inline: auto; }
+    .hero .botoes, .selos { justify-content: center; }
+    .ajuda-grade, .branco-topo, .duvidas-grade { grid-template-columns: 1fr; gap: 30px; }
+    .linhas { grid-template-columns: 1fr 1fr; }
+    .passos { grid-template-columns: 1fr; }
   }
-  @media(prefers-reduced-motion:reduce){
-    *,*::before,*::after{animation:none!important;transition:none!important}
-    .reveal,.reveal.esq,.reveal.dir,.reveal.zoom{opacity:1;transform:none}
+  @media (max-width: 760px) {
+    body { font-size: 15.5px; }
+    .env { width: calc(100% - 32px); }
+    .secao { padding: 76px 0; }
+    html { scroll-padding-top: 84px; }
+    .aviso { padding: 8px 44px 8px 14px; font-size: .78rem; }
+    .topo.rolou .aviso { display: none; }
+    .barra { height: 62px; gap: 8px; padding: 0 6px 0 6px; }
+    .topo.rolou .barra { height: 58px; }
+    .marca img { width: 44px; height: 44px; }
+    .marca b { font-size: 1.05rem; }
+    .marca small { display: none; }
+    .acoes-topo .btn { display: none; }
+    .hero { padding: calc(110px + var(--aviso)) 0 90px; }
+    .hero h1 { font-size: clamp(2.3rem, 11vw, 3.2rem); }
+    .hero .botoes { flex-direction: column; align-items: stretch; }
+    .hero-visual { min-height: 290px; }
+    .anel { width: 270px; }
+    .logo-hero { width: 180px; border-width: 5px; }
+    .chip { max-width: 180px; padding: 10px 12px; gap: 8px; border-radius: 16px; }
+    .chip .ic { width: 34px; height: 34px; border-radius: 11px; }
+    .chip .ic .i { width: 17px; height: 17px; }
+    .chip b { font-size: .8rem; }
+    .chip span { display: none; }
+    .c1 { left: 0; bottom: 4%; }
+    .c2 { right: 0; top: 4%; }
+    .beneficios { grid-template-columns: 1fr; margin-top: 44px; }
+    .ferramentas { flex-direction: column; align-items: stretch; }
+    .busca { max-width: none; }
+    .grade { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .card { border-radius: 18px; }
+    .card-img { padding: 10px; }
+    .tag-cat { left: 8px; top: 8px; font-size: .58rem; padding: 4px 8px; }
+    .card-corpo { padding: 12px; gap: 8px; }
+    .card h3 { font-size: .84rem; }
+    .card-acoes { grid-template-columns: 1fr; gap: 6px; }
+    .btn-card, .btn-add { min-height: 38px; font-size: .76rem; }
+    .ajuda, .branco, .unidades { margin: 0 8px; border-radius: 30px; }
+    .necessidades { grid-template-columns: 1fr; }
+    .resposta { padding: 28px 22px; border-radius: 26px; min-height: 0; }
+    .resposta .botoes { flex-direction: column; }
+    .numeros { grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
+    .numero { padding: 14px 10px; border-radius: 18px; text-align: center; }
+    .numero b { font-size: 1.5rem; }
+    .numero span { font-size: .7rem; }
+    .linhas { grid-template-columns: 1fr; gap: 10px; margin-top: 34px; }
+    .linha { padding: 20px; }
+    .lojas { grid-template-columns: 1fr; }
+    .loja { padding: 24px; }
+    .loja .btn { align-self: stretch; }
+    .unidades-grade { grid-template-columns: 1fr; }
+    .unidade, .feriados { padding: 22px; border-radius: 24px; }
+    .cta-caixa { padding: 48px 20px; border-radius: 28px; }
+    .cta .botoes { flex-direction: column; }
+    .rodape-grade { grid-template-columns: 1fr; }
+    .flutuantes { right: 14px; bottom: calc(14px + env(safe-area-inset-bottom, 0px)); }
+    .zap-flutuante { width: 58px; padding: 0; justify-content: center; }
+    .zap-flutuante span, .orc-flutuante .txt { display: none; }
+    .orc-flutuante { width: 50px; padding: 0; justify-content: center; }
+    .orc-flutuante .contagem { position: absolute; top: -4px; right: -4px; }
+    .anel, .logo-hero { animation: none; }
+  }
+  @media (max-width: 380px) {
+    .grade { grid-template-columns: 1fr; }
+    .tag { display: none; }
+  }
+  @media (hover: none) {
+    a, button { -webkit-tap-highlight-color: transparent; }
+    .btn:hover, .card:hover, .beneficio:hover, .linha:hover, .loja:hover, .unidade:hover, .nec:hover, .btn-card:hover { transform: none; }
+    .card:hover .card-img img { transform: none; }
+    .btn:active, .btn-card:active { transform: scale(.97); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; transition-delay: 0s !important; }
+    .rv, .escalonado > * { opacity: 1; transform: none; translate: none; }
   }
 </style>
+<noscript><style>.rv, .escalonado > * { opacity: 1 !important; transform: none !important; translate: none !important; } .flutuantes { transform: none; }</style></noscript>
 </head>
 <body>
 
-<header id="topo">
-  <div class="container nav">
-    <a href="#" class="marca">
-      <img src="IMG_5499.jpeg" alt="Logo Bom Vizinho" onerror="this.style.display='none'">
-      Bom Vizinho
-    </a>
-    <nav class="menu">
-      <a href="#catalogo">Catálogo</a>
-      <a href="#mercado-livre">Mercado Livre</a>
-      <a href="#unidades">Unidades</a>
-    </nav>
-    <a id="wpp-topo" class="btn btn-menta" target="_blank" rel="noopener"
-       href="https://wa.me/5561995944857?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Bom%20Vizinho.">Fale conosco</a>
+<!-- ícones -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></symbol>
+  <symbol id="i-seta" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-busca" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></symbol>
+  <symbol id="i-caixa" viewBox="0 0 24 24"><path d="M3.5 7.5 12 3l8.5 4.5v9L12 21l-8.5-4.5z"/><path d="M3.5 7.5 12 12l8.5-4.5M12 12v9"/></symbol>
+  <symbol id="i-lista" viewBox="0 0 24 24"><rect x="5" y="4.5" width="14" height="16.5" rx="2"/><path d="M9 3h6v3H9zM8.5 11h7M8.5 15h5"/></symbol>
+  <symbol id="i-mais" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-menos" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+  <symbol id="i-lixo" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M6.5 7l1 13h9l1-13"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-escudo" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.6-7 9-4-1.4-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-relogio" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+  <symbol id="i-raio" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></symbol>
+  <symbol id="i-gota" viewBox="0 0 24 24"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></symbol>
+  <symbol id="i-folha" viewBox="0 0 24 24"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14z"/><path d="M5 19l7-7"/></symbol>
+  <symbol id="i-arvore" viewBox="0 0 24 24"><path d="M12 3l6 8h-3l4 6H5l4-6H6z"/><path d="M12 17v4"/></symbol>
+  <symbol id="i-broca" viewBox="0 0 24 24"><path d="M9 3h6v4H9zM12 7v14M8.5 10l7 2.5M8.5 13.5l7 2.5M8.5 17l7 2.5"/></symbol>
+  <symbol id="i-broto" viewBox="0 0 24 24"><path d="M12 20v-8M12 12c0-3-2-5-5-5 0 3 2 5 5 5zM12 12c0-3 2-5 5-5 0 3-2 5-5 5zM4 20h16"/></symbol>
+  <symbol id="i-chave" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/></symbol>
+  <symbol id="i-motor" viewBox="0 0 24 24"><path d="M4 9h3l2-2h6l2 2h3v7h-3l-2 2H9l-2-2H4z"/><path d="M10 12.5h4"/></symbol>
+  <symbol id="i-loja" viewBox="0 0 24 24"><path d="M4 9l1.5-5h13L20 9M4 9h16v11H4zM10 20v-5h4v5"/><path d="M4 9a2.7 2.7 0 0 0 5.3 0 2.7 2.7 0 0 0 5.4 0 2.7 2.7 0 0 0 5.3 0"/></symbol>
+  <symbol id="i-sacola" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></symbol>
+</svg>
+
+<header class="topo" id="topo">
+  <div class="aviso" id="aviso" role="status" hidden>
+    <span id="aviso-texto"></span>
+    <a href="#unidades">Ver feriados</a>
+    <button type="button" id="fechar-aviso" aria-label="Fechar aviso">&times;</button>
+  </div>
+  <div class="env">
+    <div class="barra">
+      <a class="marca" href="#inicio" aria-label="Bom Vizinho, início">
+        <img src="IMG_5499.jpeg" alt="" width="50" height="50" onerror="this.remove()">
+        <span><b>Bom Vizinho</b><small>Materiais de construção</small></span>
+      </a>
+      <nav class="menu" id="menu" aria-label="Seções da página">
+        <a href="#catalogo">Catálogo</a>
+        <a href="#ajuda">Qual máquina?</a>
+        <a href="#branco">Linha Branco</a>
+        <a href="#mercado-livre">Mercado Livre</a>
+        <a href="#unidades">Unidades</a>
+      </nav>
+      <div class="acoes-topo">
+        <button type="button" class="btn-orc-topo" data-abre-orc aria-label="Abrir orçamento">
+          <svg class="i"><use href="#i-lista"/></svg><span class="contagem" data-contagem hidden>0</span>
+        </button>
+        <a class="btn btn-menta pequeno" href="https://wa.me/5561995944857" data-msg="Olá, Bom Vizinho! Vim pelo site e gostaria de atendimento.">
+          <svg class="i"><use href="#i-chat"/></svg>Fale conosco</a>
+        <button type="button" class="menu-btn" id="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+          <svg class="i tracos"><use href="#i-menu"/></svg><svg class="i x"><use href="#i-x"/></svg>
+        </button>
+      </div>
+    </div>
   </div>
 </header>
 
-<section class="hero">
-  <div class="bolhas"><span></span><span></span><span></span></div>
-  <div class="container hero-grid">
-    <div class="hero-texto vidro">
-      <h1>Tudo para sua obra, <span>pertinho de você.</span></h1>
-      <p>Materiais de construção, máquinas e peças em Planaltina - GO, com compra segura pelo Mercado Livre e atendimento direto no WhatsApp.</p>
-      <div class="hero-botoes">
-        <a href="#catalogo" class="btn btn-menta">Ver catálogo</a>
-        <a href="#mercado-livre" class="btn btn-contorno">Comprar no Mercado Livre</a>
+<main>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="env hero-grade">
+    <div>
+      <span class="status entra" data-status><i></i><span>Atendimento pelo WhatsApp</span></span>
+      <h1 class="entra" style="--d:1">Tudo para sua obra, <span>pertinho de você.</span></h1>
+      <p class="sub entra" style="--d:2">Materiais de construção, máquinas e peças em Planaltina - GO, com a linha Branco de motores, geradores e motobombas, compra segura pelo Mercado Livre e atendimento direto no WhatsApp.</p>
+      <div class="botoes entra" style="--d:3">
+        <a href="#catalogo" class="btn btn-menta">Ver catálogo <svg class="i seta"><use href="#i-seta"/></svg></a>
+        <a href="#mercado-livre" class="btn btn-contorno"><svg class="i"><use href="#i-sacola"/></svg>Comprar no Mercado Livre</a>
       </div>
+      <ul class="selos entra" style="--d:4">
+        <li><svg class="i"><use href="#i-check"/></svg>Duas unidades em Planaltina</li>
+        <li><svg class="i"><use href="#i-check"/></svg>Linha Branco</li>
+        <li><svg class="i"><use href="#i-check"/></svg>Orçamento pelo WhatsApp</li>
+      </ul>
     </div>
-    <div class="hero-logo">
-      <img src="IMG_5499.jpeg" alt="Bom Vizinho" onerror="this.parentElement.style.display='none'">
+    <div class="hero-visual entra" style="--d:2">
+      <div class="halo" aria-hidden="true"></div>
+      <div class="anel" aria-hidden="true"></div>
+      <div class="logo-hero"><b>BV</b><img src="IMG_5499.jpeg" alt="Logo Bom Vizinho" width="320" height="320" onerror="this.remove()"></div>
+      <div class="chip c1"><span class="ic"><svg class="i"><use href="#i-motor"/></svg></span><div><b>Linha Branco</b><span>Motores, geradores e motobombas</span></div></div>
+      <div class="chip c2"><span class="ic"><svg class="i"><use href="#i-escudo"/></svg></span><div><b>Compra segura</b><span>Pague pelo Mercado Livre</span></div></div>
     </div>
   </div>
+  <div class="onda" aria-hidden="true"><svg viewBox="0 0 1440 70" preserveAspectRatio="none"><path fill="currentColor" d="M0 40c240 30 480 30 720 10s480-30 720 0v20H0z"/></svg></div>
 </section>
 
-<div class="beneficios">
-  <div class="container">
-    <div class="beneficio vidro reveal"><span class="icone">🛡️</span><div><b>Compra segura</b>Pague pelo Mercado Livre</div></div>
-    <div class="beneficio vidro reveal" style="transition-delay:.15s"><span class="icone">💬</span><div><b>Atendimento rápido</b>Tire dúvidas no WhatsApp</div></div>
-    <div class="beneficio vidro reveal" style="transition-delay:.3s"><span class="icone">📍</span><div><b>Duas unidades</b>Santa Rita e Setor Sul</div></div>
+<div class="faixa" aria-label="O que você encontra">
+  <div class="trilho">
+    <div class="grupo"><span>Materiais de construção</span><span>Motores</span><span>Geradores</span><span>Motobombas</span><span>Roçadeiras</span><span>Motosserras</span><span>Peças</span><span>Ferramentas</span></div>
+    <div class="grupo" aria-hidden="true"><span>Materiais de construção</span><span>Motores</span><span>Geradores</span><span>Motobombas</span><span>Roçadeiras</span><span>Motosserras</span><span>Peças</span><span>Ferramentas</span></div>
   </div>
 </div>
 
-<section id="catalogo">
-  <div class="container">
-    <div class="titulo reveal">
-      <h2>Nosso catálogo</h2>
-      <p>Toque no produto para ver e comprar no Mercado Livre</p>
+<!-- BENEFÍCIOS + CATÁLOGO -->
+<section class="secao" id="catalogo" style="padding-top:70px">
+  <div class="env">
+    <div class="beneficios escalonado" style="margin-top:0">
+      <div class="beneficio"><span class="ic"><svg class="i"><use href="#i-escudo"/></svg></span><div><b>Compra segura</b><span>Pagamento e entrega pelo Mercado Livre</span></div></div>
+      <div class="beneficio"><span class="ic"><svg class="i"><use href="#i-chat"/></svg></span><div><b>Atendimento rápido</b><span>Tire dúvidas e peça orçamento no WhatsApp</span></div></div>
+      <div class="beneficio"><span class="ic"><svg class="i"><use href="#i-pin"/></svg></span><div><b>Duas unidades</b><span>Santa Rita e Setor Sul, em Planaltina</span></div></div>
+      <div class="beneficio"><span class="ic"><svg class="i"><use href="#i-motor"/></svg></span><div><b>Linha Branco</b><span>Motores, geradores, motobombas e jardinagem</span></div></div>
     </div>
-    <div class="filtros reveal" id="filtros"></div>
+
+    <div class="cabeca" style="margin-top:90px">
+      <div>
+        <span class="kicker rv">Catálogo</span>
+        <h2 class="rv" style="--d:1">Nosso <em>catálogo</em></h2>
+        <p class="intro rv" style="--d:2">Compre pelo Mercado Livre ou chame no WhatsApp: a mensagem já vai com o nome do produto. Quer vários itens? Monte um orçamento e mande tudo de uma vez.</p>
+      </div>
+    </div>
+
+    <div class="ferramentas rv" style="--d:3">
+      <label class="busca">
+        <span class="sr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Buscar produto</span>
+        <svg class="i" aria-hidden="true"><use href="#i-busca"/></svg>
+        <input type="search" id="busca" placeholder="Buscar produto, peça ou modelo" autocomplete="off">
+        <button type="button" class="limpar" id="limpar-busca" aria-label="Limpar busca" hidden><svg class="i"><use href="#i-x"/></svg></button>
+      </label>
+      <div class="filtros" id="filtros" role="group" aria-label="Filtrar por categoria"><span class="pilula" aria-hidden="true"></span></div>
+    </div>
+    <p class="contador" id="contador" aria-live="polite"></p>
     <div class="grade" id="grade"></div>
-    <div class="ver-todos reveal">
-      <a href="#mercado-livre" class="btn btn-petroleo">Ver todos os produtos</a>
+    <div class="vazio" id="vazio">
+      <b>Não encontramos esse item no site</b>
+      <p>Muitos produtos estão só no Mercado Livre ou na loja. Pergunte pra gente!</p>
+      <a class="btn btn-zap pequeno" id="zap-vazio" href="https://wa.me/5561995944857" target="_blank" rel="noopener"><svg class="i"><use href="#i-chat"/></svg>Perguntar no WhatsApp</a>
+    </div>
+    <noscript><p class="intro">Ative o JavaScript para ver o catálogo ou acesse nossas lojas no Mercado Livre.</p></noscript>
+    <div class="catalogo-rodape rv">
+      <a href="#mercado-livre" class="btn btn-petroleo">Ver todos os produtos <svg class="i seta"><use href="#i-seta"/></svg></a>
+      <button type="button" class="btn btn-claro" data-abre-orc><svg class="i"><use href="#i-lista"/></svg>Ver meu orçamento</button>
     </div>
   </div>
 </section>
 
-<section id="mercado-livre" class="lojas-ml escura">
-  <div class="bolhas"><span></span><span></span><span></span></div>
-  <div class="container">
-    <div class="titulo reveal">
-      <h2>Nossas lojas no Mercado Livre</h2>
-      <p>Veja todos os produtos e compre com a segurança do Mercado Livre</p>
+<!-- QUAL MÁQUINA -->
+<section class="secao ajuda" id="ajuda">
+  <div class="env">
+    <div class="ajuda-grade">
+      <div>
+        <span class="kicker rv">Ajuda na escolha</span>
+        <h2 class="rv" style="--d:1">Qual máquina <em>você precisa?</em></h2>
+        <p class="intro rv" style="--d:2">Escolha o serviço e veja uma dica rápida. Se ficar em dúvida, chame a gente: ajudamos a escolher o equipamento certo.</p>
+        <div class="necessidades escalonado" id="necessidades"></div>
+      </div>
+      <div class="resposta rv" id="resposta" aria-live="polite" style="--d:2"></div>
     </div>
-    <div class="lojas-grid">
-      <div class="loja vidro reveal esq">
+  </div>
+</section>
+
+<!-- BRANCO -->
+<section class="secao branco escura" id="branco" style="margin-top:20px">
+  <div class="env">
+    <div class="branco-topo">
+      <div>
+        <span class="kicker rv">Fabricante principal</span>
+        <h2 class="rv" style="--d:1">A força da <em>Branco</em>, aqui na Bom Vizinho</h2>
+        <p class="intro rv" style="--d:2">A Branco é uma das marcas mais tradicionais do Brasil em motores e equipamentos de força. Fundada por Caetano Natal Branco, hoje tem sede em Araucária (PR) e, desde 2012, faz parte do grupo norte-americano Briggs & Stratton.</p>
+      </div>
+      <div class="numeros escalonado">
+        <div class="numero"><b data-conta="1936">1936</b><span>ano de fundação</span></div>
+        <div class="numero"><b data-conta="800" data-prefixo="+">+800</b><span>assistências técnicas no Brasil</span></div>
+        <div class="numero"><b>PR</b><span>sede em Araucária, no Paraná</span></div>
+      </div>
+    </div>
+
+    <div class="linhas escalonado" id="linhas"></div>
+    <p class="nota-marca">Informações públicas sobre a fabricante. Branco é uma marca da Branco Motores. Consulte disponibilidade de cada modelo com a nossa equipe.</p>
+  </div>
+</section>
+
+<!-- MERCADO LIVRE -->
+<section class="secao" id="mercado-livre">
+  <div class="env">
+    <div class="centro">
+      <span class="kicker rv">Mercado Livre</span>
+      <h2 class="rv" style="--d:1">Nossas lojas no <em>Mercado Livre</em></h2>
+      <p class="intro rv" style="--d:2">Veja todos os anúncios e compre com o pagamento e a entrega acompanhados pelo Mercado Livre.</p>
+    </div>
+    <div class="lojas escalonado">
+      <div class="loja">
+        <span class="ic"><svg class="i"><use href="#i-loja"/></svg></span>
         <h3>Loja Bom Vizinho 1</h3>
-        <p>Confira todos os anúncios desta loja</p>
-        <a class="btn btn-ml" target="_blank" rel="noopener" href="https://lista.mercadolivre.com.br/_CustId_1686836728">Ver produtos</a>
+        <p>Confira todos os anúncios desta loja.</p>
+        <a class="btn btn-ml" target="_blank" rel="noopener" href="https://lista.mercadolivre.com.br/_CustId_1686836728">Ver produtos <svg class="i seta"><use href="#i-seta"/></svg></a>
       </div>
-      <div class="loja vidro reveal dir">
+      <div class="loja">
+        <span class="ic"><svg class="i"><use href="#i-loja"/></svg></span>
         <h3>Loja Bom Vizinho 2</h3>
-        <p>Confira todos os anúncios desta loja</p>
-        <a class="btn btn-ml" target="_blank" rel="noopener" href="https://lista.mercadolivre.com.br/_CustId_73439697">Ver produtos</a>
+        <p>Confira todos os anúncios desta loja.</p>
+        <a class="btn btn-ml" target="_blank" rel="noopener" href="https://lista.mercadolivre.com.br/_CustId_73439697">Ver produtos <svg class="i seta"><use href="#i-seta"/></svg></a>
+      </div>
+    </div>
+    <ol class="passos escalonado">
+      <li class="passo"><div><b>Escolha o produto</b><span>No catálogo do site ou direto nas nossas lojas.</span></div></li>
+      <li class="passo"><div><b>Pague pelo Mercado Livre</b><span>O pagamento fica dentro da plataforma, com toda a segurança.</span></div></li>
+      <li class="passo"><div><b>Receba seu pedido</b><span>Acompanhe a entrega pelo app. Dúvidas? Chame no WhatsApp.</span></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- UNIDADES -->
+<section class="secao unidades escura" id="unidades">
+  <div class="env">
+    <span class="kicker rv">Unidades</span>
+    <h2 class="rv" style="--d:1">Nossas <em>unidades</em></h2>
+    <p class="intro rv" style="--d:2">Estamos em dois pontos de Planaltina - GO. Passe para conhecer ou chame antes no WhatsApp.</p>
+    <div class="unidades-grade">
+      <article class="unidade rv">
+        <div class="topo-u">
+          <h3>Unidade<br>Santa Rita</h3>
+          <span class="pino" aria-hidden="true"><svg class="i"><use href="#i-pin"/></svg></span>
+        </div>
+        <address>Quadra 23, Lote 12-A, Bairro Santa Rita<span>Planaltina - GO · CEP 73752-433</span></address>
+        <span class="status" data-status style="align-self:flex-start"><i></i><span>Atendimento pelo WhatsApp</span></span>
+        <p class="hora"><svg class="i"><use href="#i-relogio"/></svg><span data-horario>Horário: confirme pelo WhatsApp</span></p>
+        <div class="botoes">
+          <a class="btn btn-menta pequeno" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Quadra+23+Lote+12-A+Santa+Rita+Planaltina+GO+73752-433"><svg class="i"><use href="#i-pin"/></svg>Ver no mapa</a>
+          <a class="btn btn-contorno pequeno" href="https://wa.me/5561995944857" data-msg="Olá, Bom Vizinho! Quero ir até a unidade Santa Rita. Pode me confirmar o horário?"><svg class="i"><use href="#i-chat"/></svg>Chamar no WhatsApp</a>
+        </div>
+      </article>
+      <article class="unidade rv" style="--d:1">
+        <div class="topo-u">
+          <h3>Unidade<br>Setor Sul</h3>
+          <span class="pino" aria-hidden="true"><svg class="i"><use href="#i-pin"/></svg></span>
+        </div>
+        <!-- PREENCHER: confirmar endereço completo (lote) -->
+        <address>Quadra QA 1 MC, Setor Sul<span>Planaltina - GO · CEP 73753-101</span></address>
+        <span class="status" data-status style="align-self:flex-start"><i></i><span>Atendimento pelo WhatsApp</span></span>
+        <p class="hora"><svg class="i"><use href="#i-relogio"/></svg><span data-horario>Horário: confirme pelo WhatsApp</span></p>
+        <div class="botoes">
+          <a class="btn btn-menta pequeno" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Quadra+QA+1+MC+Setor+Sul+Planaltina+GO+73753-101"><svg class="i"><use href="#i-pin"/></svg>Ver no mapa</a>
+          <a class="btn btn-contorno pequeno" href="https://wa.me/5561995944857" data-msg="Olá, Bom Vizinho! Quero ir até a unidade Setor Sul. Pode me confirmar o horário?"><svg class="i"><use href="#i-chat"/></svg>Chamar no WhatsApp</a>
+        </div>
+      </article>
+      <aside class="feriados rv" style="--d:2">
+        <h3>Próximos feriados</h3>
+        <p>Atualizados automaticamente.</p>
+        <ul class="lista-feriados" id="lista-feriados"></ul>
+        <p class="fonte" id="fonte-feriados">Feriados nacionais calculados automaticamente.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- DÚVIDAS -->
+<section class="secao" id="duvidas">
+  <div class="env duvidas-grade">
+    <div>
+      <span class="kicker rv">Dúvidas</span>
+      <h2 class="rv" style="--d:1">Perguntas <em>frequentes</em></h2>
+      <p class="intro rv" style="--d:2">Não achou a sua? A gente responde pelo WhatsApp.</p>
+      <a class="btn btn-zap rv" style="--d:3" href="https://wa.me/5561995944857" data-msg="Olá, Bom Vizinho! Tenho uma dúvida."><svg class="i"><use href="#i-chat"/></svg>Perguntar no WhatsApp</a>
+    </div>
+    <div class="faq escalonado">
+      <details>
+        <summary>Como faço para comprar?<span class="mais"><svg class="i"><use href="#i-mais"/></svg></span></summary>
+        <p>Você pode comprar direto pelo Mercado Livre, no botão amarelo de cada produto, ou chamar no WhatsApp, no botão verde, que já envia o nome do produto para a nossa equipe.</p>
+      </details>
+      <details>
+        <summary>Comprar pelo Mercado Livre é seguro?<span class="mais"><svg class="i"><use href="#i-mais"/></svg></span></summary>
+        <p>Sim. O pagamento é feito dentro do Mercado Livre, que acompanha a compra até a entrega. Você também vê a reputação das nossas lojas antes de comprar.</p>
+      </details>
+      <details>
+        <summary>Posso pedir orçamento de vários produtos?<span class="mais"><svg class="i"><use href="#i-mais"/></svg></span></summary>
+        <p>Pode! Toque em "Adicionar ao orçamento" nos produtos, inclua itens que não estão no site (como cimento ou areia) e envie a lista inteira pelo WhatsApp de uma vez.</p>
+      </details>
+      <details>
+        <summary>Vocês vendem peças de reposição?<span class="mais"><svg class="i"><use href="#i-mais"/></svg></span></summary>
+        <p>Sim. Para acertar a peça, mande a marca e o modelo da sua máquina no WhatsApp. Se tiver, uma foto da peça antiga ou da etiqueta ajuda bastante.</p>
+      </details>
+      <details>
+        <summary>O produto do site está disponível?<span class="mais"><svg class="i"><use href="#i-mais"/></svg></span></summary>
+        <p>O estoque muda com frequência. No Mercado Livre, o anúncio mostra a disponibilidade na hora; pelo WhatsApp, confirmamos para você antes de fechar.</p>
+      </details>
+      <details>
+        <summary>Vocês trabalham com produtos Branco?<span class="mais"><svg class="i"><use href="#i-mais"/></svg></span></summary>
+        <p>Sim, a Branco é a nossa principal fabricante. Pergunte sobre motores, geradores, motobombas, roçadeiras e as outras linhas da marca.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="env">
+    <div class="cta-caixa rv">
+      <h2>Precisa de algo para a sua obra hoje?</h2>
+      <p>Mande a sua lista no WhatsApp ou monte o orçamento aqui no site. A gente responde rapidinho.</p>
+      <div class="botoes">
+        <a class="btn btn-menta" href="https://wa.me/5561995944857" data-msg="Olá, Bom Vizinho! Vim pelo site e preciso de um orçamento."><svg class="i"><use href="#i-chat"/></svg>Chamar no WhatsApp</a>
+        <button type="button" class="btn btn-contorno" data-abre-orc><svg class="i"><use href="#i-lista"/></svg>Montar orçamento</button>
       </div>
     </div>
   </div>
 </section>
 
-<section id="unidades" class="unidades escura">
-  <div class="bolhas"><span></span><span></span><span></span></div>
-  <div class="container">
-    <div class="titulo reveal">
-      <h2>Nossas unidades</h2>
-      <p>Estamos em Planaltina - GO</p>
-    </div>
-    <div class="unidades-grid">
-      <div class="unidade vidro reveal zoom">
-        <h3>Unidade Santa Rita</h3>
-        <p>Quadra 23, Lote 12-A, Bairro Santa Rita</p>
-        <p>Planaltina - GO, CEP 73752-433</p>
-        <!-- PREENCHER: horário real -->
-        <p class="horario">🕒 Seg a sex: 00h às 00h<br>Sábado: 00h às 00h</p>
-        <a class="btn btn-menta" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Quadra+23+Lote+12-A+Santa+Rita+Planaltina+GO+73752-433">Ver no mapa</a>
-      </div>
-      <div class="unidade vidro reveal zoom" style="transition-delay:.2s">
-        <h3>Unidade Setor Sul</h3>
-        <!-- PREENCHER: confirmar endereço completo (lote) -->
-        <p>Quadra QA 1 MC, Setor Sul</p>
-        <p>Planaltina - GO, CEP 73753-101</p>
-        <!-- PREENCHER: horário real -->
-        <p class="horario">🕒 Seg a sex: 00h às 00h<br>Sábado: 00h às 00h</p>
-        <a class="btn btn-menta" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Quadra+QA+1+MC+Setor+Sul+Planaltina+GO+73753-101">Ver no mapa</a>
-      </div>
-    </div>
-  </div>
-</section>
+</main>
 
 <footer>
-  <div class="container">
-    <div class="rodape reveal">
+  <div class="env">
+    <div class="rodape-grade">
       <div>
-        <h4>Bom Vizinho E-Commerce Ltda</h4>
-        <p>Comércio varejista de materiais de construção</p>
-        <p>CNPJ 54.046.082/0001-34 (Santa Rita)</p>
-        <p>CNPJ 54.046.082/0002-15 (Setor Sul)</p>
-      </div>
-      <div>
-        <h4>Contato</h4>
-        <p><a target="_blank" rel="noopener" href="https://wa.me/5561995944857">WhatsApp: (61) 99594-4857</a></p>
+        <div class="rodape-marca"><img src="IMG_5499.jpeg" alt="" width="58" height="58" loading="lazy" onerror="this.remove()"><b>Bom Vizinho</b></div>
+        <p class="rodape-desc">Materiais de construção, máquinas e peças em Planaltina - GO. Tudo para sua obra, pertinho de você.</p>
       </div>
       <div>
         <h4>Navegue</h4>
-        <p><a href="#catalogo">Catálogo</a></p>
-        <p><a href="#mercado-livre">Lojas no Mercado Livre</a></p>
-        <p><a href="#unidades">Unidades</a></p>
+        <ul>
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#ajuda">Qual máquina?</a></li>
+          <li><a href="#branco">Linha Branco</a></li>
+          <li><a href="#unidades">Unidades</a></li>
+          <li><a href="#duvidas">Dúvidas</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Mercado Livre</h4>
+        <ul>
+          <li><a target="_blank" rel="noopener" href="https://lista.mercadolivre.com.br/_CustId_1686836728">Loja Bom Vizinho 1</a></li>
+          <li><a target="_blank" rel="noopener" href="https://lista.mercadolivre.com.br/_CustId_73439697">Loja Bom Vizinho 2</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="https://wa.me/5561995944857" data-msg="Olá, Bom Vizinho! Vim pelo site.">WhatsApp (61) 99594-4857</a></li>
+          <li>Santa Rita · Planaltina - GO</li>
+          <li>Setor Sul · Planaltina - GO</li>
+        </ul>
       </div>
     </div>
-    <p class="copy">© <span id="ano"></span> Bom Vizinho. Todos os direitos reservados.</p>
+    <div class="empresa">
+      <span><b>Bom Vizinho E-Commerce Ltda</b> · Comércio varejista de materiais de construção</span>
+      <span>CNPJ 54.046.082/0001-34 (Santa Rita) · CNPJ 54.046.082/0002-15 (Setor Sul)</span>
+      <span>© <span id="ano">2026</span> Bom Vizinho. Todos os direitos reservados.</span>
+    </div>
   </div>
 </footer>
 
-<a id="wpp-flutuante" class="wpp-flutuante" target="_blank" rel="noopener" aria-label="Fale no WhatsApp"
-   href="https://wa.me/5561995944857?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Bom%20Vizinho.">💬<span class="wpp-texto"> WhatsApp</span></a>
+<!-- botões flutuantes -->
+<div class="flutuantes" id="flutuantes">
+  <button type="button" class="orc-flutuante" data-abre-orc hidden id="orc-flutuante" aria-label="Abrir orçamento">
+    <svg class="i"><use href="#i-lista"/></svg><span class="txt">Orçamento</span><span class="contagem" data-contagem>0</span>
+  </button>
+  <a class="zap-flutuante" href="https://wa.me/5561995944857" data-msg="Olá, Bom Vizinho! Vim pelo site e gostaria de atendimento." aria-label="Falar no WhatsApp">
+    <svg class="i"><use href="#i-chat"/></svg><span>WhatsApp</span></a>
+</div>
+
+<!-- gaveta do orçamento -->
+<div class="veu" id="veu"></div>
+<aside class="gaveta" id="gaveta" role="dialog" aria-modal="true" aria-labelledby="titulo-orc" aria-hidden="true">
+  <div class="gaveta-topo">
+    <div><h3 id="titulo-orc">Meu orçamento</h3><p>Monte a lista e envie pelo WhatsApp.</p></div>
+    <button type="button" class="fechar" id="fechar-orc" aria-label="Fechar orçamento"><svg class="i"><use href="#i-x"/></svg></button>
+  </div>
+  <div class="gaveta-corpo">
+    <ul class="itens-orc" id="itens-orc"></ul>
+    <form class="campo" id="form-extra">
+      <label for="item-extra">Adicionar outro item</label>
+      <div class="linha-add">
+        <input id="item-extra" type="text" placeholder="Ex.: 10 sacos de cimento" maxlength="80">
+        <button type="submit" aria-label="Adicionar item"><svg class="i"><use href="#i-mais"/></svg></button>
+      </div>
+    </form>
+    <div class="campo">
+      <label for="nome-cliente">Seu nome (opcional)</label>
+      <input id="nome-cliente" type="text" placeholder="Como podemos te chamar?" maxlength="60" autocomplete="name">
+    </div>
+  </div>
+  <div class="gaveta-rodape">
+    <a class="btn btn-zap" id="enviar-orc" href="https://wa.me/5561995944857" target="_blank" rel="noopener"><svg class="i"><use href="#i-chat"/></svg>Enviar orçamento no WhatsApp</a>
+    <button type="button" class="limpar-orc" id="limpar-orc">Limpar lista</button>
+  </div>
+</aside>
+
+<div class="toast" id="toast" role="status"><svg class="i"><use href="#i-check"/></svg><span id="toast-txt"></span></div>
 
 <script>
-  const LOJA_ML = "https://lista.mercadolivre.com.br/_CustId_1686836728";
+(() => {
+  /* ================= CONFIGURAÇÕES: edite aqui ================= */
+  const CONFIG = {
+    whatsapp: '5561995944857',
+    lojaML: 'https://lista.mercadolivre.com.br/_CustId_1686836728',
+    // Horário de atendimento das unidades: 0 = domingo, 1 = segunda ... 6 = sábado. null = fechado.
+    // Enquanto estiver null, o site mostra "confirme pelo WhatsApp". Exemplo de preenchimento:
+    // horarios: { 0: null, 1: [7.5, 18], 2: [7.5, 18], 3: [7.5, 18], 4: [7.5, 18], 5: [7.5, 18], 6: [8, 12] },
+    horarios: null,
+    feriados: {
+      fecharNacionais: true,
+      fecharFacultativos: false,
+      extras: []   // { data: 'MM-DD' ou 'AAAA-MM-DD', nome: 'Feriado local', fecha: true }
+    }
+  };
 
-  /* ===== PRODUTOS: nome, categoria, imagem (link da foto), link (anúncio no Mercado Livre) ===== */
+  /* ================= PRODUTOS =================
+     nome, categoria, imagem (link da foto), link (anúncio no Mercado Livre).
+     Opcionais: marca: 'Branco'  |  preco: 'R$ 1.299,00'                      */
   const PRODUTOS = [
     {
-      nome: "Corrente para Motosserra Stihl MS-170 22 Dentes 3/8 1.1mm",
-      categoria: "Peças",
-      imagem: "https://http2.mlstatic.com/D_NQ_NP_620651-MLA100086246587_122025-O.jpg",
-      link: "https://www.mercadolivre.com.br/corrente-para-motosserra-stihl-ms-170-22-dentes-38-11mm/p/MLB31010502?pdp_filters=seller_id%3A1686836728"
+      nome: 'Corrente para Motosserra Stihl MS-170 22 Dentes 3/8 1.1mm',
+      categoria: 'Peças',
+      imagem: 'https://http2.mlstatic.com/D_NQ_NP_620651-MLA100086246587_122025-O.jpg',
+      link: 'https://www.mercadolivre.com.br/corrente-para-motosserra-stihl-ms-170-22-dentes-38-11mm/p/MLB31010502?pdp_filters=seller_id%3A1686836728'
     },
     {
-      nome: "Furadeira à Gasolina para Mourão 25,4cc VF500 Vulcan",
-      categoria: "Máquinas",
-      imagem: "https://http2.mlstatic.com/D_NQ_NP_967086-MLA99904070781_112025-O.jpg",
-      link: "https://www.mercadolivre.com.br/furadeira-gasolina-para-mourao-254cc-vf500-vulcan/p/MLB24993224?pdp_filters=seller_id%3A1686836728"
+      nome: 'Furadeira à Gasolina para Mourão 25,4cc VF500 Vulcan',
+      categoria: 'Máquinas',
+      marca: 'Vulcan',
+      imagem: 'https://http2.mlstatic.com/D_NQ_NP_967086-MLA99904070781_112025-O.jpg',
+      link: 'https://www.mercadolivre.com.br/furadeira-gasolina-para-mourao-254cc-vf500-vulcan/p/MLB24993224?pdp_filters=seller_id%3A1686836728'
     },
     {
-      nome: "Carburador Roçadeira VR430P VR430H VR520H VR620H VR430S",
-      categoria: "Peças",
-      imagem: "https://http2.mlstatic.com/D_NQ_NP_845202-MLB87142810047_072025-O.jpg",
-      link: "https://www.mercadolivre.com.br/carburador-rocadeira-vr430p-vr430h-vr520h-vr620h-vr430s/p/MLB2036641873?pdp_filters=seller_id%3A1686836728"
+      nome: 'Carburador Roçadeira VR430P VR430H VR520H VR620H VR430S',
+      categoria: 'Peças',
+      imagem: 'https://http2.mlstatic.com/D_NQ_NP_845202-MLB87142810047_072025-O.jpg',
+      link: 'https://www.mercadolivre.com.br/carburador-rocadeira-vr430p-vr430h-vr520h-vr620h-vr430s/p/MLB2036641873?pdp_filters=seller_id%3A1686836728'
     }
   ];
 
-  document.getElementById("ano").textContent = new Date().getFullYear();
+  /* ================= "QUAL MÁQUINA VOCÊ PRECISA?" ================= */
+  const NECESSIDADES = [
+    { titulo: 'Gerar energia', icone: 'i-raio', busca: 'gerador',
+      dica: 'Some a potência dos aparelhos que vão funcionar ao mesmo tempo e escolha um gerador com folga. Aparelhos com motor, como geladeira e bomba, puxam mais energia na hora de ligar.' },
+    { titulo: 'Bombear água', icone: 'i-gota', busca: 'motobomba',
+      dica: 'Leve em conta a altura que a água precisa subir, a distância até o destino e a vazão que você quer. Para água suja ou com barro, existem bombas próprias.' },
+    { titulo: 'Roçar e limpar terreno', icone: 'i-folha', busca: 'roçadeira',
+      dica: 'Para mato alto e áreas grandes, prefira motores mais fortes e lâmina. Para acabamento perto de muros e canteiros, o fio de nylon funciona melhor.' },
+    { titulo: 'Cortar madeira', icone: 'i-arvore', busca: 'motosserra',
+      dica: 'O tamanho do sabre acompanha a grossura das toras. Corrente afiada e equipamentos de proteção (luvas, óculos e protetor auricular) fazem toda a diferença.' },
+    { titulo: 'Furar o solo', icone: 'i-broca', busca: 'furadeira',
+      dica: 'Perfuradores de solo agilizam a instalação de mourões de cerca e o plantio. Escolha a broca pelo diâmetro do buraco que você precisa.' },
+    { titulo: 'Preparar a terra', icone: 'i-broto', busca: 'motocultivador',
+      dica: 'Motocultivadores ajudam no preparo de hortas e pequenas lavouras, com implementos para arar e fazer canteiros.' },
+    { titulo: 'Motor para máquina', icone: 'i-motor', busca: 'motor',
+      dica: 'Para trocar ou montar um equipamento, veja a potência, o tipo de eixo e se a partida é manual ou elétrica. Motores a diesel costumam ser indicados para uso pesado e contínuo.' },
+    { titulo: 'Peças e manutenção', icone: 'i-chave', categoria: 'Peças',
+      dica: 'Tenha em mãos a marca e o modelo da sua máquina. Com isso, a gente confirma se a peça é compatível antes da compra.' }
+  ];
 
-  const topo = document.getElementById("topo");
-  window.addEventListener("scroll", () => topo.classList.toggle("rolou", window.scrollY > 40), { passive:true });
+  /* ================= LINHAS DA BRANCO ================= */
+  const LINHAS = [
+    { nome: 'Motores', icone: 'i-motor', txt: 'Motores a gasolina e a diesel para equipar máquinas na obra, no campo e na indústria.' },
+    { nome: 'Geradores', icone: 'i-raio', txt: 'Energia para obras, eventos, comércio e para quando falta luz em casa.' },
+    { nome: 'Motobombas', icone: 'i-gota', txt: 'Para irrigação, drenagem e transferência de água na lavoura ou na obra.' },
+    { nome: 'Floresta e jardim', icone: 'i-folha', txt: 'Roçadeiras, cortadores de grama, sopradores, pulverizadores e motosserras.' },
+    { nome: 'Agrícola', icone: 'i-broto', txt: 'Motocultivadores e equipamentos para o preparo e o cuidado da terra.' },
+    { nome: 'Construção civil', icone: 'i-caixa', txt: 'Equipamentos de construção leve para agilizar o dia a dia da obra.' }
+  ];
 
-  const observador = new IntersectionObserver(entradas => {
-    entradas.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add("visivel");
-        e.target.addEventListener("transitionend", () => e.target.style.transitionDelay = "0s", { once:true });
-        observador.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.15 });
-  document.querySelectorAll(".reveal").forEach(el => observador.observe(el));
+  /* ================= utilidades ================= */
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const raiz = document.documentElement;
+  const reduz = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const temIO = 'IntersectionObserver' in window;
+  const zap = msg => `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(msg)}`;
+  const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const norm = s => String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
+  const ligaZap = (r = document) => $$('[data-msg]', r).forEach(a => { a.href = zap(a.dataset.msg); a.target = '_blank'; a.rel = 'noopener'; });
 
-  const grade = document.getElementById("grade");
-  const filtros = document.getElementById("filtros");
-  const categorias = ["Todos", ...new Set(PRODUTOS.map(p => p.categoria).filter(Boolean))];
+  let tempoToast;
+  const toast = txt => {
+    $('#toast-txt').textContent = txt;
+    $('#toast').classList.add('mostra');
+    clearTimeout(tempoToast);
+    tempoToast = setTimeout(() => $('#toast').classList.remove('mostra'), 2200);
+  };
 
-  function mostrar(cat){
-    const lista = cat === "Todos" ? PRODUTOS : PRODUTOS.filter(p => p.categoria === cat);
-    grade.innerHTML = lista.map((p, i) => `
-      <a class="card reveal" href="${p.link || LOJA_ML}" target="_blank" rel="noopener" style="transition-delay:${(i % 4) * 0.1}s">
-        <div class="card-img${p.imagem ? "" : " sem-img"}">
-          ${p.imagem ? `<img src="${p.imagem}" alt="${p.nome}" loading="lazy" onerror="this.parentElement.classList.add('sem-img');this.remove()">` : ""}
-        </div>
-        <div class="card-corpo">
-          <h3>${p.nome}</h3>
-          <span class="ver-ml">Ver no Mercado Livre →</span>
-        </div>
-      </a>`).join("");
-    grade.querySelectorAll(".reveal").forEach(el => observador.observe(el));
-  }
+  /* ================= catálogo ================= */
+  const grade = $('#grade'), filtrosEl = $('#filtros'), pilula = $('.pilula', filtrosEl);
+  const busca = $('#busca'), limparBusca = $('#limpar-busca'), contador = $('#contador'), vazio = $('#vazio');
+  const categorias = ['Todos', ...new Set(PRODUTOS.map(p => p.categoria).filter(Boolean))];
+  let filtroCat = 'Todos', termo = '';
 
   if (categorias.length > 2) {
-    filtros.innerHTML = categorias.map((c, i) =>
-      `<button class="filtro ${i === 0 ? "ativo" : ""}" data-cat="${c}">${c}</button>`).join("");
-    filtros.addEventListener("click", e => {
-      if (!e.target.dataset.cat) return;
-      document.querySelectorAll(".filtro").forEach(b => b.classList.remove("ativo"));
-      e.target.classList.add("ativo");
-      mostrar(e.target.dataset.cat);
-    });
-  } else {
-    filtros.style.display = "none";
+    filtrosEl.insertAdjacentHTML('beforeend', categorias.map(c =>
+      `<button type="button" class="filtro" data-cat="${esc(c)}" aria-pressed="${c === 'Todos'}">${esc(c)}</button>`).join(''));
+  } else filtrosEl.hidden = true;
+
+  const movePilula = () => {
+    const b = $('.filtro[aria-pressed="true"]', filtrosEl); if (!b) return;
+    pilula.style.left = b.offsetLeft + 'px'; pilula.style.width = b.offsetWidth + 'px';
+  };
+
+  function cardHTML(p, i, k) {
+    const nome = esc(p.nome), link = esc(p.link || CONFIG.lojaML);
+    const msg = `Olá, Bom Vizinho! Tenho interesse no produto: ${p.nome}. Ainda está disponível?`;
+    return `<article class="card${reduz ? '' : ' surge'}" style="--i:${k}">
+      <a class="card-img" href="${link}" target="_blank" rel="noopener" aria-label="Ver ${nome} no Mercado Livre">
+        <svg class="i sem-img" aria-hidden="true"><use href="#i-caixa"/></svg>
+        ${p.imagem ? `<img src="${esc(p.imagem)}" alt="${nome}" loading="lazy" decoding="async" width="400" height="400">` : ''}
+        ${p.categoria ? `<span class="tag-cat">${esc(p.categoria)}</span>` : ''}
+      </a>
+      <div class="card-corpo">
+        ${p.marca ? `<span class="marca-tag">${esc(p.marca)}</span>` : ''}
+        <h3 title="${nome}">${nome}</h3>
+        ${p.preco ? `<span class="preco">${esc(p.preco)}</span>` : ''}
+        <div class="card-acoes">
+          <a class="btn-card ml" href="${link}" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-sacola"/></svg>Mercado Livre</a>
+          <a class="btn-card zap" href="${esc(zap(msg))}" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg>WhatsApp</a>
+        </div>
+        <button type="button" class="btn-add" data-add="${i}"></button>
+      </div>
+    </article>`;
   }
-  mostrar("Todos");
+
+  function desenhaCatalogo() {
+    const t = norm(termo.trim());
+    const lista = PRODUTOS.map((p, i) => ({ p, i })).filter(({ p }) =>
+      (filtroCat === 'Todos' || p.categoria === filtroCat) &&
+      (!t || norm(`${p.nome} ${p.categoria} ${p.marca || ''}`).includes(t)));
+    grade.innerHTML = lista.map(({ p, i }, k) => cardHTML(p, i, k)).join('');
+    $$('img', grade).forEach(img => {
+      if (img.complete && !img.naturalWidth) img.remove();
+      else img.addEventListener('error', () => img.remove());
+    });
+    contador.textContent = lista.length ? `${lista.length} ${lista.length === 1 ? 'produto' : 'produtos'}${t ? ` para "${termo.trim()}"` : ''}` : '';
+    vazio.classList.toggle('mostra', !lista.length);
+    $('#zap-vazio').href = zap(t ? `Olá, Bom Vizinho! Vocês têm "${termo.trim()}"?` : 'Olá, Bom Vizinho! Estou procurando um produto.');
+    atualizaBotoesAdd();
+  }
+  function aplicaFiltro(cat) {
+    filtroCat = cat;
+    $$('.filtro', filtrosEl).forEach(b => b.setAttribute('aria-pressed', b.dataset.cat === cat));
+    movePilula();
+    desenhaCatalogo();
+  }
+  filtrosEl.addEventListener('click', e => {
+    const b = e.target.closest('.filtro'); if (!b) return;
+    aplicaFiltro(b.dataset.cat);
+    b.scrollIntoView({ inline: 'nearest', block: 'nearest', behavior: reduz ? 'auto' : 'smooth' });
+  });
+  let tempoBusca;
+  busca.addEventListener('input', () => {
+    limparBusca.hidden = !busca.value;
+    clearTimeout(tempoBusca);
+    tempoBusca = setTimeout(() => { termo = busca.value; desenhaCatalogo(); }, 160);
+  });
+  limparBusca.addEventListener('click', () => { busca.value = ''; termo = ''; limparBusca.hidden = true; desenhaCatalogo(); busca.focus(); });
+  grade.addEventListener('click', e => {
+    const b = e.target.closest('[data-add]'); if (!b) return;
+    const p = PRODUTOS[+b.dataset.add];
+    if (noOrc(p.nome)) { abreOrc(); return; }
+    addOrc(p.nome);
+  });
+  addEventListener('resize', movePilula);
+  addEventListener('load', movePilula);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(movePilula);
+
+  /* ================= orçamento ================= */
+  let orc = [];
+  try { orc = JSON.parse(localStorage.getItem('bv-orcamento') || '[]').filter(x => x && x.nome && x.qtd > 0); } catch (e) {}
+  const salvaOrc = () => { try { localStorage.setItem('bv-orcamento', JSON.stringify(orc)); } catch (e) {} };
+  const noOrc = nome => orc.some(x => x.nome === nome);
+  const gaveta = $('#gaveta'), veu = $('#veu');
+  let focoAntes = null;
+
+  function addOrc(nome, avisar = true) {
+    const it = orc.find(x => x.nome === nome);
+    if (it) it.qtd++; else orc.push({ nome, qtd: 1 });
+    salvaOrc(); atualizaOrc(true);
+    if (avisar) toast('Adicionado ao orçamento');
+  }
+  function atualizaBotoesAdd() {
+    $$('[data-add]', grade).forEach(b => {
+      const dentro = noOrc(PRODUTOS[+b.dataset.add].nome);
+      b.classList.toggle('no-orc', dentro);
+      b.innerHTML = dentro
+        ? '<svg class="i" aria-hidden="true"><use href="#i-check"/></svg>No orçamento · ver lista'
+        : '<svg class="i" aria-hidden="true"><use href="#i-mais"/></svg>Adicionar ao orçamento';
+    });
+  }
+  function atualizaOrc(pulou = false) {
+    const total = orc.reduce((s, x) => s + x.qtd, 0);
+    $$('[data-contagem]').forEach(c => {
+      c.textContent = total;
+      c.hidden = !total;
+      if (pulou && total) { c.classList.remove('pula'); void c.offsetWidth; c.classList.add('pula'); }
+    });
+    $('#orc-flutuante').hidden = !total;
+    $('#itens-orc').innerHTML = orc.length ? orc.map((x, k) => `
+      <li class="item-orc">
+        <b>${esc(x.nome)}</b>
+        <div class="qtd">
+          <button type="button" data-menos="${k}" aria-label="Diminuir"><svg class="i"><use href="#i-menos"/></svg></button>
+          <span aria-label="Quantidade">${x.qtd}</span>
+          <button type="button" data-mais="${k}" aria-label="Aumentar"><svg class="i"><use href="#i-mais"/></svg></button>
+          <button type="button" class="remover" data-remove="${k}" aria-label="Remover"><svg class="i"><use href="#i-lixo"/></svg></button>
+        </div>
+      </li>`).join('')
+      : `<li class="orc-vazio"><svg class="i" aria-hidden="true"><use href="#i-lista"/></svg>Sua lista está vazia.<br>Adicione produtos do catálogo ou escreva um item abaixo.</li>`;
+    const enviar = $('#enviar-orc');
+    enviar.style.opacity = orc.length ? '1' : '.5';
+    enviar.style.pointerEvents = orc.length ? 'auto' : 'none';
+    enviar.setAttribute('aria-disabled', !orc.length);
+    montaMensagem();
+    atualizaBotoesAdd();
+  }
+  function montaMensagem() {
+    const nome = $('#nome-cliente').value.trim();
+    const linhas = orc.map(x => `• ${x.qtd}x ${x.nome}`).join('\n');
+    const msg = `Olá, Bom Vizinho! Vim pelo site e gostaria de um orçamento:\n\n${linhas}${nome ? `\n\nMeu nome é ${nome}.` : ''}`;
+    $('#enviar-orc').href = zap(msg);
+  }
+  function abreOrc() {
+    focoAntes = document.activeElement;
+    gaveta.classList.add('aberta'); veu.classList.add('aberto');
+    gaveta.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('trava');
+    setTimeout(() => $('#fechar-orc').focus(), 50);
+  }
+  function fechaOrc() {
+    gaveta.classList.remove('aberta'); veu.classList.remove('aberto');
+    gaveta.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('trava');
+    if (focoAntes) focoAntes.focus();
+  }
+  $$('[data-abre-orc]').forEach(b => b.addEventListener('click', abreOrc));
+  $('#fechar-orc').addEventListener('click', fechaOrc);
+  veu.addEventListener('click', fechaOrc);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && gaveta.classList.contains('aberta')) fechaOrc(); });
+  $('#itens-orc').addEventListener('click', e => {
+    const b = e.target.closest('button'); if (!b) return;
+    if (b.dataset.mais) orc[+b.dataset.mais].qtd++;
+    if (b.dataset.menos) { const it = orc[+b.dataset.menos]; it.qtd--; if (it.qtd < 1) orc.splice(+b.dataset.menos, 1); }
+    if (b.dataset.remove) orc.splice(+b.dataset.remove, 1);
+    salvaOrc(); atualizaOrc();
+  });
+  $('#form-extra').addEventListener('submit', e => {
+    e.preventDefault();
+    const campo = $('#item-extra'), v = campo.value.trim();
+    if (!v) { campo.focus(); return; }
+    addOrc(v, false); campo.value = ''; campo.focus();
+  });
+  $('#nome-cliente').addEventListener('input', montaMensagem);
+  $('#limpar-orc').addEventListener('click', () => { if (!orc.length) return; orc = []; salvaOrc(); atualizaOrc(); toast('Lista limpa'); });
+
+  /* ================= qual máquina ================= */
+  const necEl = $('#necessidades'), resp = $('#resposta');
+  necEl.innerHTML = NECESSIDADES.map((n, k) =>
+    `<button type="button" class="nec" data-nec="${k}" aria-pressed="${k === 0}"><span class="ic"><svg class="i"><use href="#${n.icone}"/></svg></span>${esc(n.titulo)}</button>`).join('');
+  function mostraNec(k, animar = true) {
+    const n = NECESSIDADES[k];
+    $$('.nec', necEl).forEach(b => b.setAttribute('aria-pressed', +b.dataset.nec === k));
+    resp.classList.remove('troca'); if (animar && !reduz) { void resp.offsetWidth; resp.classList.add('troca'); }
+    resp.innerHTML = `
+      <span class="ic-grande"><svg class="i"><use href="#${n.icone}"/></svg></span>
+      <h3>${esc(n.titulo)}</h3>
+      <p>${esc(n.dica)}</p>
+      <div class="botoes">
+        <button type="button" class="btn btn-menta pequeno" data-ver="${k}"><svg class="i"><use href="#i-busca"/></svg>Ver no catálogo</button>
+        <a class="btn btn-contorno pequeno" href="${esc(zap(`Olá, Bom Vizinho! Preciso de ajuda para escolher um equipamento para: ${n.titulo.toLowerCase()}.`))}" target="_blank" rel="noopener"><svg class="i"><use href="#i-chat"/></svg>Pedir ajuda no WhatsApp</a>
+      </div>`;
+  }
+  necEl.addEventListener('click', e => { const b = e.target.closest('.nec'); if (b) mostraNec(+b.dataset.nec); });
+  resp.addEventListener('click', e => {
+    const b = e.target.closest('[data-ver]'); if (!b) return;
+    const n = NECESSIDADES[+b.dataset.ver];
+    if (n.categoria && categorias.includes(n.categoria)) {
+      busca.value = ''; termo = ''; limparBusca.hidden = true; aplicaFiltro(n.categoria);
+    } else {
+      busca.value = n.busca || n.titulo; termo = busca.value; limparBusca.hidden = false;
+      $$('.filtro', filtrosEl).forEach(x => x.setAttribute('aria-pressed', x.dataset.cat === 'Todos'));
+      filtroCat = 'Todos'; movePilula(); desenhaCatalogo();
+    }
+    $('#catalogo').scrollIntoView({ behavior: reduz ? 'auto' : 'smooth' });
+  });
+  mostraNec(0, false);
+
+  /* ================= linhas Branco ================= */
+  $('#linhas').innerHTML = LINHAS.map(l => `
+    <div class="linha">
+      <span class="ic"><svg class="i"><use href="#${l.icone}"/></svg></span>
+      <b>${esc(l.nome)}</b>
+      <span>${esc(l.txt)}</span>
+      <a href="${esc(zap(`Olá, Bom Vizinho! Quero saber sobre a linha ${l.nome.toLowerCase()} da Branco.`))}" target="_blank" rel="noopener">Perguntar sobre ${esc(l.nome.toLowerCase())} <svg class="i"><use href="#i-seta"/></svg></a>
+    </div>`).join('');
+
+  /* ================= datas e feriados (horário de Brasília) ================= */
+  const DIA_MS = 864e5;
+  const EXT = ['domingo', 'segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sábado'];
+  const utc = (a, m, d) => new Date(Date.UTC(a, m, d));
+  const iso = d => d.toISOString().slice(0, 10);
+  const soma = (d, n) => new Date(d.getTime() + n * DIA_MS);
+  const ddmm = d => `${String(d.getUTCDate()).padStart(2, '0')}/${String(d.getUTCMonth() + 1).padStart(2, '0')}`;
+  const fmtH = h => { const hh = Math.floor(h), mm = Math.round((h - hh) * 60); return mm ? `${hh}h${String(mm).padStart(2, '0')}` : `${hh}h`; };
+  const masc = d => d === 0 || d === 6;
+  const noNa = d => masc(d) ? 'no' : 'na';
+
+  let HOJE, hora;
+  {
+    const agora = new Date();
+    try {
+      const p = {};
+      new Intl.DateTimeFormat('en-US', { timeZone: 'America/Sao_Paulo', year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', hour12: false })
+        .formatToParts(agora).forEach(x => { p[x.type] = x.value; });
+      HOJE = utc(+p.year, +p.month - 1, +p.day);
+      hora = (+p.hour % 24) + (+p.minute) / 60;
+    } catch (e) {
+      HOJE = utc(agora.getFullYear(), agora.getMonth(), agora.getDate());
+      hora = agora.getHours() + agora.getMinutes() / 60;
+    }
+  }
+  const HOJE_ISO = iso(HOJE);
+  const FERIADOS = new Map(), anos = new Set();
+  let usouAPI = false;
+  const FACULT = /carnaval|corpus christi|cinzas/i;
+
+  function pascoa(Y) {
+    const a = Y % 19, b = Math.floor(Y / 100), c = Y % 100, d = Math.floor(b / 4), e = b % 4;
+    const f = Math.floor((b + 8) / 25), g = Math.floor((b - f + 1) / 3), h = (19 * a + b - d - g + 15) % 30;
+    const i = Math.floor(c / 4), k = c % 4, l = (32 + 2 * e + 2 * i - h - k) % 7, m = Math.floor((a + 11 * h + 22 * l) / 451);
+    const x = h + l - 7 * m + 114;
+    return utc(Y, Math.floor(x / 31) - 1, (x % 31) + 1);
+  }
+  function calculaAno(Y) {
+    const fixos = [['01-01', 'Confraternização Universal'], ['04-21', 'Tiradentes'], ['05-01', 'Dia do Trabalho'], ['09-07', 'Independência do Brasil'],
+      ['10-12', 'Nossa Senhora Aparecida'], ['11-02', 'Finados'], ['11-15', 'Proclamação da República'], ['12-25', 'Natal']];
+    if (Y >= 2024) fixos.push(['11-20', 'Dia Nacional de Zumbi e da Consciência Negra']);
+    fixos.forEach(([md, nome]) => FERIADOS.set(`${Y}-${md}`, { nome, tipo: 'nacional' }));
+    const p = pascoa(Y);
+    FERIADOS.set(iso(soma(p, -48)), { nome: 'Carnaval', tipo: 'facultativo' });
+    FERIADOS.set(iso(soma(p, -47)), { nome: 'Carnaval', tipo: 'facultativo' });
+    FERIADOS.set(iso(soma(p, -2)), { nome: 'Sexta-feira Santa', tipo: 'nacional' });
+    FERIADOS.set(iso(soma(p, 60)), { nome: 'Corpus Christi', tipo: 'facultativo' });
+  }
+  function aplicaExtras(Y) {
+    CONFIG.feriados.extras.forEach(x => {
+      const k = x.data.length === 5 ? `${Y}-${x.data}` : x.data;
+      if (k.startsWith(Y + '-')) FERIADOS.set(k, { nome: x.nome, tipo: 'local', fecha: x.fecha !== false });
+    });
+  }
+  function usaLista(Y, lista) {
+    [...FERIADOS.keys()].forEach(k => { if (k.startsWith(Y + '-')) FERIADOS.delete(k); });
+    lista.forEach(f => {
+      if (!f || !f.date) return;
+      FERIADOS.set(f.date, { nome: f.name, tipo: (f.type !== 'national' || FACULT.test(f.name || '')) ? 'facultativo' : 'nacional' });
+    });
+    aplicaExtras(Y); usouAPI = true;
+  }
+  function carregaAno(Y) {
+    if (anos.has(Y)) return Promise.resolve(false);
+    anos.add(Y); calculaAno(Y); aplicaExtras(Y);
+    let cache = null;
+    try { cache = JSON.parse(localStorage.getItem('bv-feriados-' + Y) || 'null'); } catch (e) {}
+    if (cache && Array.isArray(cache.lista) && Date.now() - cache.t < 7 * DIA_MS) { usaLista(Y, cache.lista); return Promise.resolve(true); }
+    if (!('fetch' in window)) return Promise.resolve(false);
+    const ctrl = 'AbortController' in window ? new AbortController() : null;
+    const limite = setTimeout(() => ctrl && ctrl.abort(), 6000);
+    return fetch(`https://brasilapi.com.br/api/feriados/v1/${Y}`, ctrl ? { signal: ctrl.signal } : undefined)
+      .then(r => r.ok ? r.json() : Promise.reject(r.status))
+      .then(lista => {
+        if (!Array.isArray(lista) || !lista.length) return false;
+        usaLista(Y, lista);
+        try { localStorage.setItem('bv-feriados-' + Y, JSON.stringify({ t: Date.now(), lista })); } catch (e) {}
+        return true;
+      })
+      .catch(() => false)
+      .finally(() => clearTimeout(limite));
+  }
+  const temHorario = !!CONFIG.horarios;
+  const fechaFeriado = f => !f ? false : f.tipo === 'local' ? f.fecha : f.tipo === 'nacional' ? CONFIG.feriados.fecharNacionais : CONFIG.feriados.fecharFacultativos;
+  function infoDia(d) {
+    const feriado = FERIADOS.get(iso(d)) || null, fecha = fechaFeriado(feriado);
+    const normal = temHorario ? (CONFIG.horarios[d.getUTCDay()] || null) : undefined;
+    return { feriado, fecha, normal, horario: fecha ? null : normal };
+  }
+
+  /* textos de horário */
+  if (temHorario) {
+    const ORDEM = [1, 2, 3, 4, 5, 6, 0], grupos = [];
+    ORDEM.forEach(d => { const h = CONFIG.horarios[d], k = h ? h.join('-') : null, g = grupos[grupos.length - 1]; if (g && g.k === k) g.dias.push(d); else grupos.push({ k, h, dias: [d] }); });
+    const diasTxt = ds => ds.length === 1 ? EXT[ds[0]] : ds.length === 2 ? `${EXT[ds[0]]} e ${EXT[ds[1]]}` : `de ${EXT[ds[0]]} a ${EXT[ds[ds.length - 1]]}`;
+    const resumo = grupos.filter(g => g.h).map(g => `${diasTxt(g.dias)}, das ${fmtH(g.h[0])} às ${fmtH(g.h[1])}`).join('; ');
+    $$('[data-horario]').forEach(el => { el.textContent = cap(resumo) + (CONFIG.feriados.fecharNacionais ? '. Fechado nos feriados nacionais.' : '.'); });
+  }
+
+  function quandoAbre() {
+    for (let n = 1; n <= 30; n++) {
+      const d = soma(HOJE, n), inf = infoDia(d);
+      if (inf.horario) return `abre ${n === 1 ? 'amanhã' : n < 7 ? EXT[d.getUTCDay()] : `dia ${ddmm(d)}`} às ${fmtH(inf.horario[0])}`;
+    }
+    return 'fale pelo WhatsApp';
+  }
+  function atualizaStatus() {
+    if (!temHorario) return;
+    const inf = infoDia(HOJE);
+    let txt, cls = 'fechado';
+    if (inf.horario && hora >= inf.horario[0] && hora < inf.horario[1]) { cls = 'aberto'; txt = `Aberto agora · até as ${fmtH(inf.horario[1])}`; }
+    else if (inf.horario && hora < inf.horario[0]) txt = `Fechado agora · abre hoje às ${fmtH(inf.horario[0])}`;
+    else if (inf.fecha && inf.normal) txt = `Feriado hoje · ${quandoAbre()}`;
+    else txt = `Fechado agora · ${quandoAbre()}`;
+    $$('[data-status]').forEach(s => { s.classList.remove('aberto', 'fechado'); s.classList.add(cls); $('span', s).textContent = txt; });
+  }
+
+  const aviso = $('#aviso');
+  const ajustaAviso = () => raiz.style.setProperty('--aviso', aviso.hidden ? '0px' : aviso.offsetHeight + 'px');
+  function atualizaAviso() {
+    let dispensado = false;
+    try { dispensado = sessionStorage.getItem('bv-aviso') === HOJE_ISO; } catch (e) {}
+    aviso.hidden = true;
+    if (!dispensado) {
+      for (let n = 0; n <= 7; n++) {
+        const d = soma(HOJE, n), inf = infoDia(d), sem = d.getUTCDay();
+        if (!inf.feriado || !inf.fecha) continue;
+        if (temHorario ? !inf.normal : sem === 0) continue;
+        const quando = n === 0 ? 'Hoje' : n === 1 ? 'Amanhã' : `${cap(noNa(sem))} ${EXT[sem]}, ${ddmm(d)},`;
+        const fim = temHorario ? (n === 0 ? 'e as unidades estão fechadas. O WhatsApp continua recebendo mensagens.' : ': as unidades não abrem.') : ': confirme o funcionamento pelo WhatsApp.';
+        $('#aviso-texto').innerHTML = `<strong>${quando} é feriado</strong> (${esc(inf.feriado.nome)})${n === 0 && temHorario ? ' ' : ''}${fim}`;
+        aviso.hidden = false;
+        break;
+      }
+    }
+    ajustaAviso();
+  }
+  $('#fechar-aviso').addEventListener('click', () => { aviso.hidden = true; ajustaAviso(); try { sessionStorage.setItem('bv-aviso', HOJE_ISO); } catch (e) {} });
+  addEventListener('resize', ajustaAviso);
+
+  const mesCurto = new Intl.DateTimeFormat('pt-BR', { month: 'short', timeZone: 'UTC' });
+  function desenhaFeriados() {
+    const prox = [...FERIADOS.keys()].filter(k => k >= HOJE_ISO).sort().slice(0, 5);
+    $('#lista-feriados').innerHTML = prox.map(k => {
+      const d = new Date(k + 'T00:00:00Z'), inf = infoDia(d), sem = d.getUTCDay();
+      let tag;
+      if (temHorario) tag = !inf.normal ? `<span class="tag neutra">Cai ${noNa(sem)} ${EXT[sem]}</span>` : inf.fecha ? '<span class="tag fecha">Fechado</span>' : '<span class="tag abre">Aberto</span>';
+      else tag = sem === 0 ? '<span class="tag neutra">Domingo</span>' : inf.feriado.tipo === 'facultativo' ? '<span class="tag neutra">Facultativo</span>' : '<span class="tag fecha">Feriado</span>';
+      return `<li class="lf"><span class="data"><b>${d.getUTCDate()}</b><small>${mesCurto.format(d).replace('.', '')}</small></span>
+        <div><strong>${esc(inf.feriado.nome)}</strong><span>${cap(EXT[sem])}</span></div>${tag}</li>`;
+    }).join('');
+    $('#fonte-feriados').textContent = usouAPI ? 'Feriados nacionais atualizados automaticamente pela BrasilAPI.' : 'Feriados nacionais calculados automaticamente.';
+  }
+  const tudo = () => { atualizaStatus(); atualizaAviso(); desenhaFeriados(); };
+  const ano = HOJE.getUTCFullYear();
+  const carregando = [carregaAno(ano), carregaAno(ano + 1)];
+  tudo();
+  Promise.all(carregando).then(r => { if (r.some(Boolean)) tudo(); });
+
+  /* ================= topo, menu e flutuantes ================= */
+  const topo = $('#topo'), menuBtn = $('#menu-btn'), flut = $('#flutuantes');
+  let trava = false;
+  const aoRolar = () => { const y = scrollY; topo.classList.toggle('rolou', y > 30); flut.classList.toggle('mostra', y > 500); trava = false; };
+  addEventListener('scroll', () => { if (!trava) { trava = true; requestAnimationFrame(aoRolar); } }, { passive: true });
+  aoRolar();
+  const fechaMenu = () => { topo.classList.remove('menu-aberto'); menuBtn.setAttribute('aria-expanded', 'false'); menuBtn.setAttribute('aria-label', 'Abrir menu'); };
+  menuBtn.addEventListener('click', () => { const a = topo.classList.toggle('menu-aberto'); menuBtn.setAttribute('aria-expanded', a); menuBtn.setAttribute('aria-label', a ? 'Fechar menu' : 'Abrir menu'); });
+  $$('.menu a').forEach(a => a.addEventListener('click', fechaMenu));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') fechaMenu(); });
+  document.addEventListener('click', e => { if (!topo.contains(e.target)) fechaMenu(); });
+
+  /* ================= contadores, revelação e pausa fora da tela ================= */
+  function conta(el) {
+    if (reduz || el.dataset.feito) return; el.dataset.feito = '1';
+    const alvo = +el.dataset.conta, ini = alvo > 1000 ? alvo - 60 : 0, pre = el.dataset.prefixo || '', t0 = performance.now();
+    const passo = t => { const k = Math.min(1, (t - t0) / 1400), e = 1 - Math.pow(1 - k, 3); el.textContent = pre + Math.round(ini + (alvo - ini) * e); if (k < 1) requestAnimationFrame(passo); };
+    requestAnimationFrame(passo);
+  }
+  $$('.escalonado').forEach(g => [...g.children].forEach((c, i) => c.style.setProperty('--i', i)));
+  const alvos = $$('.rv, .escalonado');
+  if (temIO && !reduz) {
+    const obs = new IntersectionObserver(es => es.forEach(e => {
+      if (!e.isIntersecting) return;
+      e.target.classList.add('visivel');
+      $$('[data-conta]', e.target).forEach(conta);
+      obs.unobserve(e.target);
+    }), { threshold: .12, rootMargin: '0px 0px -5% 0px' });
+    alvos.forEach(a => obs.observe(a));
+    const pausa = new IntersectionObserver(es => es.forEach(e => e.target.classList.toggle('pausado', !e.isIntersecting)));
+    $$('.hero, .faixa, #unidades').forEach(el => pausa.observe(el));
+    const links = $$('.menu a[href^="#"]');
+    const secObs = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) links.forEach(l => l.classList.toggle('aqui', l.getAttribute('href') === '#' + e.target.id));
+    }), { rootMargin: '-45% 0px -50% 0px' });
+    links.forEach(l => { const s = $(l.getAttribute('href')); if (s) secObs.observe(s); });
+  } else alvos.forEach(a => a.classList.add('visivel'));
+
+  /* ================= início ================= */
+  desenhaCatalogo();
+  atualizaOrc();
+  ligaZap();
+  $('#ano').textContent = new Date().getFullYear();
+})();
 </script>
 </body>
 </html>
